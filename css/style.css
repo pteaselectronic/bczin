@@ -524,11 +524,12 @@ ul {
 }
 
 .product-menu__panel {
+    --product-menu-offset-x: -50%;
     position: absolute;
     z-index: 120;
-    top: calc(100% + 0.35rem);
+    top: calc(100% + 1.75rem);
     left: 50%;
-    display: none;
+    display: grid;
     width: min(22rem, calc(100vw - 2rem));
     padding: 1.25rem;
     border: 1px solid rgba(18, 18, 18, 0.1);
@@ -536,7 +537,11 @@ ul {
     color: var(--color-ink);
     background: var(--color-white);
     box-shadow: 0 1.25rem 3rem rgba(18, 18, 18, 0.18);
-    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(var(--product-menu-offset-x), -0.45rem);
+    visibility: hidden;
+    transition: opacity 160ms ease, transform 180ms ease, visibility 0s linear 180ms;
 }
 
 .product-menu__panel::before {
@@ -544,7 +549,7 @@ ul {
     right: 0;
     bottom: 100%;
     left: 0;
-    height: 0.6rem;
+    height: 2rem;
     content: "";
 }
 
@@ -569,13 +574,14 @@ ul {
     color: var(--color-gray-900);
     font-size: 0.78rem;
     font-weight: 650;
-    transition: color var(--transition), background-color var(--transition);
+    transition: color var(--transition), background-color var(--transition), transform var(--transition);
 }
 
 .product-menu__categories a:hover,
 .product-menu__categories a:focus-visible {
     color: var(--color-red-dark);
     background: var(--color-gray-100);
+    transform: translateX(0.18rem);
 }
 
 .product-menu__all {
@@ -592,12 +598,18 @@ ul {
 
 .product-menu:hover>.product-menu__panel,
 .product-menu:focus-within>.product-menu__panel,
+.product-menu.is-hover-open>.product-menu__panel,
 .product-menu[open]>.product-menu__panel {
-    display: grid;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(var(--product-menu-offset-x), 0);
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 .product-menu:hover>.product-menu__toggle::after,
 .product-menu:focus-within>.product-menu__toggle::after,
+.product-menu.is-hover-open>.product-menu__toggle::after,
 .product-menu[open]>.product-menu__toggle::after {
     transform: translateY(0.1rem) rotate(225deg);
 }
@@ -3579,7 +3591,7 @@ ul {
 }
 
 .simple-contact-nav .product-menu__panel {
-    top: calc(100% - 0.8rem);
+    top: calc(100% + 0.75rem);
     letter-spacing: normal;
     text-transform: none;
 }
@@ -4394,7 +4406,7 @@ ul {
     }
 
     .simple-contact-nav .product-menu__panel {
-        top: calc(100% - 0.25rem);
+        top: calc(100% + 0.5rem);
     }
 
     .simple-contact-hero {
@@ -4488,9 +4500,9 @@ ul {
     }
 
     .product-menu__panel {
+        --product-menu-offset-x: -22%;
         left: 0;
         width: min(19rem, calc(100vw - 2rem));
-        transform: translateX(-22%);
     }
 
     .hero {
