@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Pteas Camera about camera gear and services, or find our demo shop in Siem Reap, Cambodia.">
-    <meta name="theme-color" content="#222222">
+    <meta name="theme-color" content="#faf9f6">
     <title>Contact Us | Pteas Camera</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,49 +13,59 @@
     <!-- Accessibility skip link -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Compact image masthead and primary navigation -->
-    <div class="simple-contact-masthead">
-        <header class="simple-contact-header">
-            <div class="container simple-contact-header__inner">
-                <a class="brand simple-contact-brand" href="index.html" aria-label="Pteas Camera home">
-                    <img class="brand__mark" src="images/brand/pteas-camera-logo.png" width="508" height="508" alt="Pteas Camera">
-                    <span class="brand__words">
-                        <span class="brand__name">PTEAS</span>
-                        <span class="brand__category">CAMERA</span>
-                    </span>
-                </a>
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="container header__main">
+            <!-- Brand logo -->
+            <a class="brand" href="index.html" aria-label="Pteas Camera home">
+                <img class="brand__mark" src="images/brand/pteas-camera-logo.png" width="508" height="508" alt="">
+                <span class="brand__words">
+                    <span class="brand__name">PTEAS</span>
+                    <span class="brand__category">CAMERA</span>
+                </span>
+            </a>
 
-                <nav class="simple-contact-nav" aria-label="Primary navigation">
-                    <a href="index.html">Home</a>
-                    <details class="product-menu">
-                        <summary class="product-menu__toggle">Products</summary>
-                        <div class="product-menu__panel">
-                            <p>Browse categories</p>
-                            <div class="product-menu__categories">
-                                <a href="products.html#cameras">Cameras</a>
-                                <a href="products.html#lenses">Lenses</a>
-                                <a href="products.html#tripods">Tripods</a>
-                                <a href="products.html#lighting">Lighting</a>
-                                <a href="products.html#audio-video">Audio &amp; Video</a>
-                                <a href="products.html#bags">Bags</a>
-                                <a href="products.html#accessories">Accessories</a>
-                                <a href="products.html#drones">Drones</a>
-                            </div>
-                            <a class="product-menu__all" href="products.html">View all products <span aria-hidden="true">&rarr;</span></a>
+            <!-- Primary navigation -->
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <details class="product-menu">
+                    <summary class="product-menu__toggle">Products</summary>
+                    <div class="product-menu__panel">
+                        <p>Browse categories</p>
+                        <div class="product-menu__categories">
+                            <a href="products.html#cameras">Cameras</a>
+                            <a href="products.html#lenses">Lenses</a>
+                            <a href="products.html#tripods">Tripods</a>
+                            <a href="products.html#lighting">Lighting</a>
+                            <a href="products.html#audio-video">Audio &amp; Video</a>
+                            <a href="products.html#bags">Bags</a>
+                            <a href="products.html#accessories">Accessories</a>
+                            <a href="products.html#drones">Drones</a>
                         </div>
-                    </details>
-                    <a href="services.html">Services</a>
-                    <a href="about.html">About Us</a>
-                    <a class="is-current" href="contact.html" aria-current="page">Contact</a>
-                </nav>
+                        <a class="product-menu__all" href="products.html">View all products <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </details>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a class="is-current" href="contact.html" aria-current="page">Contact</a>
+            </nav>
 
-                <a class="simple-contact-call" href="tel:+855123456789" aria-label="Call Pteas Camera">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.5 10 7.8 8.4 9.4c.8 1.7 2.1 3 3.8 3.8l1.6-1.6 4.3 2.8-.5 3.4c-.1.7-.7 1.2-1.4 1.2C9.9 19 5 14.1 5 7.8c0-.7.5-1.3 1.2-1.4l1-.1V3.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <span>Call us</span>
-                </a>
+            <!-- Header actions -->
+            <div class="header-actions">
+                <form class="header-search-form" action="products.html" method="get" role="search">
+                    <label for="contact-header-search-input" class="sr-only">Search products</label>
+                    <div class="header-search-bar">
+                        <svg class="header-search-bar__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <circle cx="10.75" cy="10.75" r="6.5"></circle>
+                            <path d="m15.6 15.6 4.65 4.65"></path>
+                        </svg>
+                        <input id="contact-header-search-input" class="header-search-bar__input" type="search" name="q" placeholder="Search products..." autocomplete="off">
+                    </div>
+                </form>
+                <a class="button button--small" href="contact.html">Let's talk</a>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
 
     <!-- Main Content -->
     <main id="main-content">
