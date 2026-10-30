@@ -1,6 +1,6 @@
 # Pteas Camera product and image sources
 
-Generated from `js/product-data.js`, `product-image-sources.json`, and `product-gallery-image-sources.json`. Sources were checked against official manufacturer product, specification, support, or press pages. Prices are reference USD figures and may change.
+Generated from `docs/sources/catalog-data.json`, `product-image-sources.json`, and `product-gallery-image-sources.json`. Sources were checked against official manufacturer product, specification, support, or press pages. Prices are reference USD figures and may change.
 
 > Image approval: the local images were downloaded from official manufacturer pages or official media assets. Those pages do not universally grant commercial retailer reuse rights. Obtain written manufacturer or licensed-supplier approval before publishing.
 

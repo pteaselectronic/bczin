@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple semantic HTML and native CSS starter for a student website.">
+    <title>Student Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Site identity and primary navigation -->
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">Student Project</a>
+            <nav aria-label="Primary navigation">
+                <ul class="navigation">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Introduction: one main heading describes the page -->
+        <section class="hero section" aria-labelledby="page-title">
+            <div class="container">
+                <p class="eyebrow">HTML + CSS</p>
+                <h1 id="page-title">Build your next idea.</h1>
+                <p class="lead">Start with clear content, a simple layout, and room to learn.</p>
+                <a class="button" href="#about">Explore the project</a>
+            </div>
+        </section>
+
+        <!-- Page content: sections have meaningful headings -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container text-content">
+                <h2 id="about-title">About this project</h2>
+                <p>Replace this text with an introduction to your website. Explain its purpose and who it helps.</p>
+            </div>
+        </section>
+
+        <!-- Related cards share a responsive CSS Grid layout -->
+        <section class="section section-muted" id="features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title">Project features</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Clear content</h3>
+                        <p>Use headings and paragraphs to make your ideas easy to follow.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Flexible layout</h3>
+                        <p>Let the layout adjust naturally to the available screen width.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Accessible navigation</h3>
+                        <p>Use meaningful links and visible keyboard focus styles.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Replace the example email address with your own -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="container text-content">
+                <h2 id="contact-title">Contact</h2>
+                <p>Have a question about the project?</p>
+                <address><a href="mailto:student@example.com">student@example.com</a></address>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>Student Project &mdash; made with HTML and CSS.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

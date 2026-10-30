@@ -1,0 +1,77 @@
+/* Native CSS enhancements for the static, JavaScript-free website. */
+.static-detail-target,
+.static-catalog-target { position: absolute; top: 0; left: 0; width: 0; height: 0; pointer-events: none; }
+.static-product-details > .product-detail { display: none; }
+.static-product-details > .static-detail-target:target + .product-detail { display: block; }
+.static-product-details:has(> .static-detail-target:target) > .product-detail-error { display: none; }
+.product-detail-page .product-detail[data-product-id] .product-detail__summary .product-detail__features { display: none; }
+.catalog-static-search-note { display: none; }
+.catalog-static-search-note:target { display: block; margin-block: 1.5rem; padding: 1rem; border: 1px solid var(--color-gray-200); border-radius: var(--radius-small); background: var(--color-white); font-size: 0.85rem; }
+.catalog-static-search-note a { color: var(--color-red); text-decoration: underline; }
+.home-hero__poster { display: none; }
+.home-hero__video::-webkit-media-controls,
+.home-hero__video::-webkit-media-controls-enclosure { display: none !important; }
+.home-search input::-webkit-calendar-picker-indicator,
+.header-search-bar__input::-webkit-calendar-picker-indicator { display: none !important; }
+/* Keep the collapsed mobile input focusable so a native label can expand it. */
+@media (max-width: 900px) {
+    .header-search-bar__input { display: block; position: absolute; width: 1px; height: 1px; opacity: 0; }
+    .header-search-bar:focus-within .header-search-bar__input { position: static; width: 100%; height: auto; opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .home-hero__video { display: none; }
+    .home-hero__poster { display: block; }
+}
+/* Brand links select existing cards with URL fragments and :has(). */
+.products-page:has(#brand-sony:target) .catalog-product-card:not([data-brand="Sony"]),
+.products-page:has(#brand-sony:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Sony"])) { display: none; }
+.products-page:has(#brand-canon:target) .catalog-product-card:not([data-brand="Canon"]),
+.products-page:has(#brand-canon:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Canon"])) { display: none; }
+.products-page:has(#brand-nikon:target) .catalog-product-card:not([data-brand="Nikon"]),
+.products-page:has(#brand-nikon:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Nikon"])) { display: none; }
+.products-page:has(#brand-fujifilm:target) .catalog-product-card:not([data-brand="Fujifilm"]),
+.products-page:has(#brand-fujifilm:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Fujifilm"])) { display: none; }
+.products-page:has(#brand-panasonic:target) .catalog-product-card:not([data-brand="Panasonic"]),
+.products-page:has(#brand-panasonic:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Panasonic"])) { display: none; }
+.products-page:has(#brand-leica:target) .catalog-product-card:not([data-brand="Leica"]),
+.products-page:has(#brand-leica:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Leica"])) { display: none; }
+.products-page:has(#brand-gopro:target) .catalog-product-card:not([data-brand="GoPro"]),
+.products-page:has(#brand-gopro:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="GoPro"])) { display: none; }
+.products-page:has(#brand-dji:target) .catalog-product-card:not([data-brand="DJI"]),
+.products-page:has(#brand-dji:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="DJI"])) { display: none; }
+.products-page:has(#brand-sigma:target) .catalog-product-card:not([data-brand="Sigma"]),
+.products-page:has(#brand-sigma:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Sigma"])) { display: none; }
+.products-page:has(#brand-tamron:target) .catalog-product-card:not([data-brand="Tamron"]),
+.products-page:has(#brand-tamron:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Tamron"])) { display: none; }
+.products-page:has(#brand-peak-design:target) .catalog-product-card:not([data-brand="Peak Design"]),
+.products-page:has(#brand-peak-design:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Peak Design"])) { display: none; }
+.products-page:has(#brand-manfrotto:target) .catalog-product-card:not([data-brand="Manfrotto"]),
+.products-page:has(#brand-manfrotto:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Manfrotto"])) { display: none; }
+.products-page:has(#brand-gitzo:target) .catalog-product-card:not([data-brand="Gitzo"]),
+.products-page:has(#brand-gitzo:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Gitzo"])) { display: none; }
+.products-page:has(#brand-smallrig:target) .catalog-product-card:not([data-brand="SmallRig"]),
+.products-page:has(#brand-smallrig:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="SmallRig"])) { display: none; }
+.products-page:has(#brand-godox:target) .catalog-product-card:not([data-brand="Godox"]),
+.products-page:has(#brand-godox:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Godox"])) { display: none; }
+.products-page:has(#brand-aputure:target) .catalog-product-card:not([data-brand="Aputure"]),
+.products-page:has(#brand-aputure:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Aputure"])) { display: none; }
+.products-page:has(#brand-amaran:target) .catalog-product-card:not([data-brand="amaran"]),
+.products-page:has(#brand-amaran:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="amaran"])) { display: none; }
+.products-page:has(#brand-rode:target) .catalog-product-card:not([data-brand="RØDE"]),
+.products-page:has(#brand-rode:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="RØDE"])) { display: none; }
+.products-page:has(#brand-sennheiser:target) .catalog-product-card:not([data-brand="Sennheiser"]),
+.products-page:has(#brand-sennheiser:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Sennheiser"])) { display: none; }
+.products-page:has(#brand-zoom:target) .catalog-product-card:not([data-brand="Zoom"]),
+.products-page:has(#brand-zoom:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Zoom"])) { display: none; }
+.products-page:has(#brand-atomos:target) .catalog-product-card:not([data-brand="Atomos"]),
+.products-page:has(#brand-atomos:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Atomos"])) { display: none; }
+.products-page:has(#brand-lowepro:target) .catalog-product-card:not([data-brand="Lowepro"]),
+.products-page:has(#brand-lowepro:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Lowepro"])) { display: none; }
+.products-page:has(#brand-pelican:target) .catalog-product-card:not([data-brand="Pelican"]),
+.products-page:has(#brand-pelican:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Pelican"])) { display: none; }
+.products-page:has(#brand-think-tank:target) .catalog-product-card:not([data-brand="Think Tank"]),
+.products-page:has(#brand-think-tank:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Think Tank"])) { display: none; }
+.products-page:has(#brand-sandisk:target) .catalog-product-card:not([data-brand="SanDisk"]),
+.products-page:has(#brand-sandisk:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="SanDisk"])) { display: none; }
+.products-page:has(#brand-lexar:target) .catalog-product-card:not([data-brand="Lexar"]),
+.products-page:has(#brand-lexar:target) .catalog-product-panel:not(:has(.catalog-product-card[data-brand="Lexar"])) { display: none; }
