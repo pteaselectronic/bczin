@@ -8,10 +8,12 @@
   <title>Products | Pteas Camera</title>
   <link rel="icon" href="images/brand/pteas-camera-logo.png">
   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/static-catalog.css">
 </head>
 
 <body class="secondary-page products-page" id="top">
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- Shared site header and category navigation -->
   <header class="site-header">
     <div class="container header__main">
       <a class="brand" href="index.html" aria-label="Pteas Camera home">
@@ -35,33 +37,1079 @@
         </details>
         <a href="services.html">Services</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
       </nav>
-      <div class="header-actions"><a class="button button--small" href="contact.html">Let's talk</a></div>
+      <div class="header-actions">
+        <form class="header-search-form" action="products.html#catalog-search-help" method="get" role="search">
+          <label for="products-header-search-input" class="sr-only">Search products by name or brand</label>
+          <label class="header-search-bar" for="products-header-search-input">
+            <svg class="header-search-bar__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="10.75" cy="10.75" r="6.5"></circle>
+              <path d="m15.6 15.6 4.65 4.65"></path>
+            </svg>
+            <input id="products-header-search-input" class="header-search-bar__input" type="search" name="q"
+              placeholder="Search products..." autocomplete="off" list="product-name-suggestions" aria-describedby="static-search-help" title="Product-name suggestions only. Submit to browse the catalogue; use Ctrl+F or Cmd+F to find text.">
+          </label>
+        </form>
+        <a class="button button--small" href="contact.html">Let's talk</a>
+      </div>
     </div>
   </header>
 
+  <!-- Static catalogue: category anchors and product cards work without JavaScript. -->
   <main id="main-content">
-    <h1 class="visually-hidden">Products</h1>
+    <!-- BEGIN BRAND TARGETS -->
+    <span id="brand-sony" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-canon" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-nikon" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-fujifilm" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-panasonic" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-leica" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-gopro" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-dji" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-sigma" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-tamron" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-peak-design" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-manfrotto" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-gitzo" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-smallrig" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-godox" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-aputure" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-amaran" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-rode" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-sennheiser" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-zoom" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-atomos" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-lowepro" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-pelican" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-think-tank" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-sandisk" class="static-catalog-target" aria-hidden="true"></span>
+    <span id="brand-lexar" class="static-catalog-target" aria-hidden="true"></span>
+    <!-- END BRAND TARGETS -->
+<h1 class="visually-hidden">Products</h1>
+    <p class="catalog-static-search-note container" id="catalog-search-help">This static catalogue offers product-name suggestions. Submitting a search opens the complete catalogue. Use the category links or your browser's Find command (Ctrl+F / Cmd+F) to locate a name. <a href="products.html">Browse all products</a>.</p>
 
     <section class="products-catalog" aria-label="Product catalogue">
       <nav class="catalog-category-bar" aria-label="Product categories">
-        <div class="container catalog-category-bar__scroll" data-catalog-filters>
-          <p class="catalog-filter__heading">Filter by category</p>
-        </div>
+        <!-- BEGIN STATIC FILTERS -->
+      <div class="container catalog-category-bar__scroll">
+        <p class="catalog-filter__heading">Filter by category</p>
+        <a class="catalog-category-link" href="#cameras">Cameras</a>
+        <a class="catalog-category-link" href="#lenses">Lenses</a>
+        <a class="catalog-category-link" href="#tripods">Tripods</a>
+        <a class="catalog-category-link" href="#lighting">Lighting</a>
+        <a class="catalog-category-link" href="#audio-video">Audio &amp; Video</a>
+        <a class="catalog-category-link" href="#bags">Bags &amp; Cases</a>
+        <a class="catalog-category-link" href="#accessories">Accessories</a>
+        <a class="catalog-category-link" href="#drones">Drones</a>
+      </div>
+      <!-- END STATIC FILTERS -->
       </nav>
 
-      <div class="catalog-products" data-catalog-products>
-        <p class="catalog-loading" role="status">Loading products&hellip;</p>
-        <noscript><p class="catalog-empty-state">JavaScript is required to display this catalogue.</p></noscript>
+      <!-- BEGIN STATIC CATALOG -->
+      <div class="catalog-products">
+      <section class="catalog-product-panel" id="cameras" aria-labelledby="cameras-title">
+        <div class="catalog-product-panel__heading"><div><span>01 / Cameras</span><h2 id="cameras-title">Cameras</h2></div></div>
+        <div class="product-card-grid">
+        <a class="catalog-product-card" href="products/catalog-details.html#sony-alpha-7-iv" data-brand="Sony" aria-label="View details for Sony Alpha 7 IV">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/sony-alpha-7-iv-front.jpg" width="1200" height="900" loading="lazy" alt="Sony Alpha 7 IV"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sony</span>
+            <strong>Sony Alpha 7 IV</strong>
+            <span class="catalog-product-card__details">A versatile full-frame hybrid with dependable subject tracking, detailed 4K recording and stabilized capture for professional everyday assignments.</span>
+            <span class="catalog-product-card__footer"><b>$2,499.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#canon-eos-r6-mark-ii" data-brand="Canon" aria-label="View details for Canon EOS R6 Mark II">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/canon-eos-r6-mark-ii-front.jpg" width="1200" height="900" loading="lazy" alt="Canon EOS R6 Mark II"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Canon</span>
+            <strong>Canon EOS R6 Mark II</strong>
+            <span class="catalog-product-card__details">A fast full-frame hybrid body with responsive autofocus, strong stabilization and flexible stills-to-video performance for demanding creators.</span>
+            <span class="catalog-product-card__footer"><b>$2,299</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#nikon-z6iii" data-brand="Nikon" aria-label="View details for Nikon Z6III">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/nikon-z6iii-front.jpg" width="1200" height="900" loading="lazy" alt="Nikon Z6III"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Nikon</span>
+            <strong>Nikon Z6III</strong>
+            <span class="catalog-product-card__details">A responsive hybrid camera pairing a partially stacked sensor with fast bursts, bright viewing and flexible internal RAW video.</span>
+            <span class="catalog-product-card__footer"><b>$3,299.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#fujifilm-x-t5" data-brand="Fujifilm" aria-label="View details for Fujifilm X-T5">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/fujifilm-x-t5-front.jpg" width="1200" height="900" loading="lazy" alt="Fujifilm X-T5"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Fujifilm</span>
+            <strong>Fujifilm X-T5</strong>
+            <span class="catalog-product-card__details">A compact high-resolution camera with tactile controls, capable stabilization and signature film simulations for still-focused creative travel kits.</span>
+            <span class="catalog-product-card__footer"><b>$1,699.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#panasonic-lumix-s5ii" data-brand="Panasonic" aria-label="View details for Panasonic LUMIX S5II">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/panasonic-lumix-s5ii-front.jpg" width="1200" height="900" loading="lazy" alt="Panasonic LUMIX S5II"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Panasonic</span>
+            <strong>Panasonic LUMIX S5II</strong>
+            <span class="catalog-product-card__details">A stabilized full-frame hybrid with phase-detect autofocus, active cooling and robust recording tools for reliable long-form production.</span>
+            <span class="catalog-product-card__footer"><b>$1,999.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#leica-q3" data-brand="Leica" aria-label="View details for Leica Q3">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/leica-q3-front.jpg" width="1200" height="900" loading="lazy" alt="Leica Q3"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Leica</span>
+            <strong>Leica Q3</strong>
+            <span class="catalog-product-card__details">A premium full-frame compact combining a fast 28mm Summilux lens, high resolution and refined controls for discreet daily photography.</span>
+            <span class="catalog-product-card__footer"><b>$7,350</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#canon-eos-r50" data-brand="Canon" aria-label="View details for Canon EOS R50">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/canon-eos-r50-front.jpg" width="1200" height="900" loading="lazy" alt="Canon EOS R50"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Canon</span>
+            <strong>Canon EOS R50</strong>
+            <span class="catalog-product-card__details">A lightweight interchangeable-lens camera with guided controls, reliable subject detection and oversampled 4K for emerging photo and video creators.</span>
+            <span class="catalog-product-card__footer"><b>$779.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#nikon-d780" data-brand="Nikon" aria-label="View details for Nikon D780">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/nikon-d780-front.jpg" width="1200" height="900" loading="lazy" alt="Nikon D780"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Nikon</span>
+            <strong>Nikon D780</strong>
+            <span class="catalog-product-card__details">A durable full-frame DSLR blending optical-viewfinder handling with capable live-view autofocus and uncropped 4K for versatile location work.</span>
+            <span class="catalog-product-card__footer"><b>$2,149.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sony-rx100-vii" data-brand="Sony" aria-label="View details for Sony Cyber-shot RX100 VII">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/sony-rx100-vii-front.jpg" width="1200" height="900" loading="lazy" alt="Sony Cyber-shot RX100 VII"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sony</span>
+            <strong>Sony Cyber-shot RX100 VII</strong>
+            <span class="catalog-product-card__details">A pocket-size zoom compact bringing fast autofocus, blackout-free bursts and detailed 4K capture to travel and documentary shooting.</span>
+            <span class="catalog-product-card__footer"><b>$1,499.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#fujifilm-instax-mini-evo" data-brand="Fujifilm" aria-label="View details for Fujifilm instax mini Evo">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/fujifilm-instax-mini-evo-front.jpg" width="1200" height="900" loading="lazy" alt="Fujifilm instax mini Evo"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Fujifilm</span>
+            <strong>Fujifilm instax mini Evo</strong>
+            <span class="catalog-product-card__details">A hybrid instant camera pairing digital previews with creative lens and film effects before printing selected images on instax mini film.</span>
+            <span class="catalog-product-card__footer"><b>$199.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#gopro-hero13-black" data-brand="GoPro" aria-label="View details for GoPro HERO13 Black">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/gopro-hero13-black-front.jpg" width="1200" height="900" loading="lazy" alt="GoPro HERO13 Black"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">GoPro</span>
+            <strong>GoPro HERO13 Black</strong>
+            <span class="catalog-product-card__details">A rugged action camera with high-frame-rate 5.3K capture, strong stabilization and magnetic mounting options for active production.</span>
+            <span class="catalog-product-card__footer"><b>$399.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-osmo-action-5-pro" data-brand="DJI" aria-label="View details for DJI Osmo Action 5 Pro">
+          <span class="catalog-product-card__image"><img src="images/products/cameras/dji-osmo-action-5-pro-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Osmo Action 5 Pro"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Osmo Action 5 Pro</strong>
+            <span class="catalog-product-card__details">A dual-screen action camera with extended runtime, deep waterproofing and generous internal storage for adventure and creator workflows.</span>
+            <span class="catalog-product-card__footer"><b>$319</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        </div>
+      </section>
+      <section class="catalog-product-panel" id="lenses" aria-labelledby="lenses-title">
+        <div class="catalog-product-panel__heading"><div><span>02 / Lenses</span><h2 id="lenses-title">Lenses</h2></div></div>
+        <div class="product-card-grid">
+        <a class="catalog-product-card" href="products/catalog-details.html#canon-rf50mm-f1-8-stm" data-brand="Canon" aria-label="View details for Canon RF50mm F1.8 STM">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/canon-rf50mm-f1-8-stm-front.jpg" width="1200" height="900" loading="lazy" alt="Canon RF50mm F1.8 STM"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Canon</span>
+            <strong>Canon RF50mm F1.8 STM</strong>
+            <span class="catalog-product-card__details">A lightweight normal prime with a bright aperture and close focusing that makes an approachable everyday companion for EOS R cameras.</span>
+            <span class="catalog-product-card__footer"><b>$239.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sony-fe-24-70mm-f2-8-gm-ii" data-brand="Sony" aria-label="View details for Sony FE 24-70mm F2.8 GM II">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/sony-fe-24-70mm-f2-8-gm-ii-front.jpg" width="1200" height="900" loading="lazy" alt="Sony FE 24-70mm F2.8 GM II"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sony</span>
+            <strong>Sony FE 24-70mm F2.8 GM II</strong>
+            <span class="catalog-product-card__details">A compact flagship standard zoom with constant f/2.8 brightness, rapid linear motors and refined close-focus performance for hybrid professionals.</span>
+            <span class="catalog-product-card__footer"><b>$2,449.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#nikon-nikkor-z-85mm-f1-8-s" data-brand="Nikon" aria-label="View details for NIKKOR Z 85mm f/1.8 S">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/nikon-nikkor-z-85mm-f1-8-s-front.jpg" width="1200" height="900" loading="lazy" alt="NIKKOR Z 85mm f/1.8 S"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Nikon</span>
+            <strong>NIKKOR Z 85mm f/1.8 S</strong>
+            <span class="catalog-product-card__details">A sharp S-Line portrait prime with smooth rendering, quiet focus and weather-conscious construction for stills and cinematic close-ups.</span>
+            <span class="catalog-product-card__footer"><b>$849.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#fujifilm-xf23mm-f1-4-r-lm-wr" data-brand="Fujifilm" aria-label="View details for Fujinon XF23mmF1.4 R LM WR">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/fujifilm-xf23mm-f1-4-r-lm-wr-front.jpg" width="1200" height="900" loading="lazy" alt="Fujinon XF23mmF1.4 R LM WR"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Fujifilm</span>
+            <strong>Fujinon XF23mmF1.4 R LM WR</strong>
+            <span class="catalog-product-card__details">A fast weather-resistant prime delivering a natural wide-normal view, close focusing and quiet linear-motor autofocus for X-series creators.</span>
+            <span class="catalog-product-card__footer"><b>$899.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#panasonic-lumix-s-100mm-f2-8-macro" data-brand="Panasonic" aria-label="View details for Panasonic LUMIX S 100mm F2.8 MACRO">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/panasonic-lumix-s-100mm-f2-8-macro-front.jpg" width="1200" height="900" loading="lazy" alt="Panasonic LUMIX S 100mm F2.8 MACRO"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Panasonic</span>
+            <strong>Panasonic LUMIX S 100mm F2.8 MACRO</strong>
+            <span class="catalog-product-card__details">A compact L-Mount macro offering life-size reproduction, quiet focusing and portrait-ready rendering in a notably short lightweight barrel.</span>
+            <span class="catalog-product-card__footer"><b>$997.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sigma-14-24mm-f2-8-dg-dn-art" data-brand="Sigma" aria-label="View details for Sigma 14-24mm F2.8 DG DN | Art">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/sigma-14-24mm-f2-8-dg-dn-art-front.jpg" width="1200" height="900" loading="lazy" alt="Sigma 14-24mm F2.8 DG DN | Art"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sigma</span>
+            <strong>Sigma 14-24mm F2.8 DG DN | Art</strong>
+            <span class="catalog-product-card__details">A constant-aperture ultra-wide zoom built for high-resolution full-frame mirrorless cameras, with controlled distortion and weather-conscious construction.</span>
+            <span class="catalog-product-card__footer"><b>$1,399</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#tamron-28-75mm-f2-8-di-iii-vxd-g2" data-brand="Tamron" aria-label="View details for Tamron 28-75mm F/2.8 Di III VXD G2">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/tamron-28-75mm-f2-8-di-iii-vxd-g2-front.jpg" width="1200" height="900" loading="lazy" alt="Tamron 28-75mm F/2.8 Di III VXD G2"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Tamron</span>
+            <strong>Tamron 28-75mm F/2.8 Di III VXD G2</strong>
+            <span class="catalog-product-card__details">A second-generation fast standard zoom with closer focusing, responsive VXD autofocus and a portable build for full-frame mirrorless systems.</span>
+            <span class="catalog-product-card__footer"><b>$899</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#canon-rf100-500mm-f4-5-7-1-l-is-usm" data-brand="Canon" aria-label="View details for Canon RF100-500mm F4.5-7.1 L IS USM">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/canon-rf100-500mm-f4-5-7-1-l-is-usm-front.jpg" width="1200" height="900" loading="lazy" alt="Canon RF100-500mm F4.5-7.1 L IS USM"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Canon</span>
+            <strong>Canon RF100-500mm F4.5-7.1 L IS USM</strong>
+            <span class="catalog-product-card__details">A portable L-series super-telephoto zoom with optical stabilization, fast Dual Nano USM focus and extensive reach for distant subjects.</span>
+            <span class="catalog-product-card__footer"><b>$3,099</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sony-fe-90mm-f2-8-macro-g-oss" data-brand="Sony" aria-label="View details for Sony FE 90mm F2.8 Macro G OSS">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/sony-fe-90mm-f2-8-macro-g-oss-front.jpg" width="1200" height="900" loading="lazy" alt="Sony FE 90mm F2.8 Macro G OSS"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sony</span>
+            <strong>Sony FE 90mm F2.8 Macro G OSS</strong>
+            <span class="catalog-product-card__details">A stabilized life-size macro lens with a focus-clutch barrel and refined rendering for close detail, products and portrait work.</span>
+            <span class="catalog-product-card__footer"><b>$1,049.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#nikon-nikkor-z-14-30mm-f4-s" data-brand="Nikon" aria-label="View details for NIKKOR Z 14-30mm f/4 S">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/nikon-nikkor-z-14-30mm-f4-s-front.jpg" width="1200" height="900" loading="lazy" alt="NIKKOR Z 14-30mm f/4 S"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Nikon</span>
+            <strong>NIKKOR Z 14-30mm f/4 S</strong>
+            <span class="catalog-product-card__details">A retractable S-Line ultra-wide zoom accepting conventional front filters while keeping a compact profile for travel and location photography.</span>
+            <span class="catalog-product-card__footer"><b>$1,099.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#fujifilm-xf70-300mm-f4-5-6-r-lm-ois-wr" data-brand="Fujifilm" aria-label="View details for Fujinon XF70-300mmF4-5.6 R LM OIS WR">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/fujifilm-xf70-300mm-f4-5-6-r-lm-ois-wr-front.jpg" width="1200" height="900" loading="lazy" alt="Fujinon XF70-300mmF4-5.6 R LM OIS WR"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Fujifilm</span>
+            <strong>Fujinon XF70-300mmF4-5.6 R LM OIS WR</strong>
+            <span class="catalog-product-card__details">A compact weather-resistant telephoto zoom with strong optical stabilization and close-focus flexibility for travel, nature and outdoor sports.</span>
+            <span class="catalog-product-card__footer"><b>$799.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sigma-35mm-f1-4-dg-dn-art" data-brand="Sigma" aria-label="View details for Sigma 35mm F1.4 DG DN | Art">
+          <span class="catalog-product-card__image"><img src="images/products/lenses/sigma-35mm-f1-4-dg-dn-art-front.jpg" width="1200" height="900" loading="lazy" alt="Sigma 35mm F1.4 DG DN | Art"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sigma</span>
+            <strong>Sigma 35mm F1.4 DG DN | Art</strong>
+            <span class="catalog-product-card__details">A modern full-frame Art prime offering bright-aperture control, precise autofocus and detailed rendering for environmental portraits and low-light scenes.</span>
+            <span class="catalog-product-card__footer"><b>$989</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        </div>
+      </section>
+      <section class="catalog-product-panel" id="tripods" aria-labelledby="tripods-title">
+        <div class="catalog-product-panel__heading"><div><span>03 / Tripods</span><h2 id="tripods-title">Tripods</h2></div></div>
+        <div class="product-card-grid">
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-travel-tripod-carbon" data-brand="Peak Design" aria-label="View details for Peak Design Travel Tripod Carbon">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/peak-design-travel-tripod-carbon-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Travel Tripod Carbon"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Travel Tripod Carbon</strong>
+            <span class="catalog-product-card__details">A compact carbon travel tripod that packs to water-bottle diameter while integrating a low-profile ball head and mobile-phone mount.</span>
+            <span class="catalog-product-card__footer"><b>$599.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-travel-tripod-aluminum" data-brand="Peak Design" aria-label="View details for Peak Design Travel Tripod Aluminum">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/peak-design-travel-tripod-aluminum-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Travel Tripod Aluminum"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Travel Tripod Aluminum</strong>
+            <span class="catalog-product-card__details">An aluminum version of Peak Design's compact travel tripod, retaining the slim packed profile, integrated ball head and fast leg deployment.</span>
+            <span class="catalog-product-card__footer"><b>$399.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#manfrotto-befree-advanced-aluminum" data-brand="Manfrotto" aria-label="View details for Manfrotto Befree Advanced Aluminum Travel Tripod">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/manfrotto-befree-advanced-aluminum-front.jpg" width="1200" height="900" loading="lazy" alt="Manfrotto Befree Advanced Aluminum Travel Tripod"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Manfrotto</span>
+            <strong>Manfrotto Befree Advanced Aluminum Travel Tripod</strong>
+            <span class="catalog-product-card__details">A portable four-section travel tripod with twist locks and a ball head for quick setup with mirrorless and DSLR kits.</span>
+            <span class="catalog-product-card__footer"><b>$259.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#manfrotto-befree-gt-xpro-carbon" data-brand="Manfrotto" aria-label="View details for Manfrotto Befree GT XPRO Carbon Travel Tripod">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/manfrotto-befree-gt-xpro-carbon-front.jpg" width="1200" height="900" loading="lazy" alt="Manfrotto Befree GT XPRO Carbon Travel Tripod"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Manfrotto</span>
+            <strong>Manfrotto Befree GT XPRO Carbon Travel Tripod</strong>
+            <span class="catalog-product-card__details">A carbon travel tripod adding a 90-degree center-column mechanism for overhead compositions while maintaining a portable folding design.</span>
+            <span class="catalog-product-card__footer"><b>$579.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#manfrotto-mt055cxpro3" data-brand="Manfrotto" aria-label="View details for Manfrotto MT055CXPRO3 055 Carbon Tripod">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/manfrotto-mt055cxpro3-front.jpg" width="1200" height="900" loading="lazy" alt="Manfrotto MT055CXPRO3 055 Carbon Tripod"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Manfrotto</span>
+            <strong>Manfrotto MT055CXPRO3 055 Carbon Tripod</strong>
+            <span class="catalog-product-card__details">A rigid three-section carbon tripod with a horizontal column system and low working position for demanding studio and location cameras.</span>
+            <span class="catalog-product-card__footer"><b>$699.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#manfrotto-mt190xpro4" data-brand="Manfrotto" aria-label="View details for Manfrotto MT190XPRO4 190 Aluminum Tripod">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/manfrotto-mt190xpro4-front.jpg" width="1200" height="900" loading="lazy" alt="Manfrotto MT190XPRO4 190 Aluminum Tripod"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Manfrotto</span>
+            <strong>Manfrotto MT190XPRO4 190 Aluminum Tripod</strong>
+            <span class="catalog-product-card__details">A four-section aluminum tripod with a 90-degree center column, quick leg locks and compact folded length for versatile field use.</span>
+            <span class="catalog-product-card__footer"><b>$299.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#manfrotto-mvk608twinfcus" data-brand="Manfrotto" aria-label="View details for Manfrotto Nitrotech 608 with 645 Fast Twin Carbon">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/manfrotto-mvk608twinfcus-front.jpg" width="1200" height="900" loading="lazy" alt="Manfrotto Nitrotech 608 with 645 Fast Twin Carbon"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Manfrotto</span>
+            <strong>Manfrotto Nitrotech 608 with 645 Fast Twin Carbon</strong>
+            <span class="catalog-product-card__details">A carbon twin-leg video kit pairing a continuous-counterbalance fluid head with fast-lock legs and a 75mm bowl for production crews.</span>
+            <span class="catalog-product-card__footer"><b>$1,899.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#manfrotto-element-mii-monopod" data-brand="Manfrotto" aria-label="View details for Manfrotto Element MII Aluminum Monopod">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/manfrotto-element-mii-monopod-front.jpg" width="1200" height="900" loading="lazy" alt="Manfrotto Element MII Aluminum Monopod"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Manfrotto</span>
+            <strong>Manfrotto Element MII Aluminum Monopod</strong>
+            <span class="catalog-product-card__details">A five-section aluminum monopod offering high load capacity in a compact lightweight format for mobile photographers and long-lens support.</span>
+            <span class="catalog-product-card__footer"><b>$74.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#gitzo-gk1545t-82tqd" data-brand="Gitzo" aria-label="View details for Gitzo Traveler Series 1 Tripod Kit GK1545T-82TQD">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/gitzo-gk1545t-82tqd-front.jpg" width="1200" height="900" loading="lazy" alt="Gitzo Traveler Series 1 Tripod Kit GK1545T-82TQD"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Gitzo</span>
+            <strong>Gitzo Traveler Series 1 Tripod Kit GK1545T-82TQD</strong>
+            <span class="catalog-product-card__details">A compact carbon travel tripod with reverse-folding legs and a precision center ball head for lightweight professional camera systems.</span>
+            <span class="catalog-product-card__footer"><b>$999.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#gitzo-gt2542" data-brand="Gitzo" aria-label="View details for Gitzo Mountaineer Series 2 Tripod GT2542">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/gitzo-gt2542-front.jpg" width="1200" height="900" loading="lazy" alt="Gitzo Mountaineer Series 2 Tripod GT2542"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Gitzo</span>
+            <strong>Gitzo Mountaineer Series 2 Tripod GT2542</strong>
+            <span class="catalog-product-card__details">A four-section carbon Mountaineer balancing height, stiffness and manageable transport dimensions for professional cameras and medium telephoto lenses.</span>
+            <span class="catalog-product-card__footer"><b>$1,199.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#smallrig-freeblazer-ad-100" data-brand="SmallRig" aria-label="View details for SmallRig FreeBlazer AD-100 Carbon Video Tripod Kit 3989">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/smallrig-freeblazer-ad-100-front.jpg" width="1200" height="900" loading="lazy" alt="SmallRig FreeBlazer AD-100 Carbon Video Tripod Kit 3989"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">SmallRig</span>
+            <strong>SmallRig FreeBlazer AD-100 Carbon Video Tripod Kit 3989</strong>
+            <span class="catalog-product-card__details">A height-adjustable carbon video tripod with a fluid head, 75mm bowl and one-step leg locks for efficient production setups.</span>
+            <span class="catalog-product-card__footer"><b>$399</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#smallrig-ct-10" data-brand="SmallRig" aria-label="View details for SmallRig CT-10 Aluminum Camera Tripod 3935">
+          <span class="catalog-product-card__image"><img src="images/products/tripods/smallrig-ct-10-front.jpg" width="1200" height="900" loading="lazy" alt="SmallRig CT-10 Aluminum Camera Tripod 3935"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">SmallRig</span>
+            <strong>SmallRig CT-10 Aluminum Camera Tripod 3935</strong>
+            <span class="catalog-product-card__details">A value-focused aluminum tripod converting to a monopod and including an Arca ball head plus smartphone holder for mixed-device creation.</span>
+            <span class="catalog-product-card__footer"><b>$79.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        </div>
+      </section>
+      <section class="catalog-product-panel" id="lighting" aria-labelledby="lighting-title">
+        <div class="catalog-product-panel__heading"><div><span>04 / Lighting</span><h2 id="lighting-title">Lighting</h2></div></div>
+        <div class="product-card-grid">
+        <a class="catalog-product-card" href="products/catalog-details.html#godox-sl60iibi" data-brand="Godox" aria-label="View details for Godox SL60IIBi Bi-Color LED Video Light">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/godox-sl60iibi-front.jpg" width="1200" height="900" loading="lazy" alt="Godox SL60IIBi Bi-Color LED Video Light"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Godox</span>
+            <strong>Godox SL60IIBi Bi-Color LED Video Light</strong>
+            <span class="catalog-product-card__details">A compact Bowens-mount COB light with broad bi-color adjustment, app control and quiet operation for small studios and home creators.</span>
+            <span class="catalog-product-card__footer"><b>$139</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#godox-ml60bi" data-brand="Godox" aria-label="View details for Godox ML60Bi Bi-Color LED Light">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/godox-ml60bi-front.jpg" width="1200" height="900" loading="lazy" alt="Godox ML60Bi Bi-Color LED Light"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Godox</span>
+            <strong>Godox ML60Bi Bi-Color LED Light</strong>
+            <span class="catalog-product-card__details">A compact 60-watt bi-color fixture accepting battery power and modifier accessories for portable interviews, portraits and location video.</span>
+            <span class="catalog-product-card__footer"><b>$269</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#godox-ad200pro-ii" data-brand="Godox" aria-label="View details for Godox AD200Pro II Pocket Flash">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/godox-ad200pro-ii-front.jpg" width="1200" height="900" loading="lazy" alt="Godox AD200Pro II Pocket Flash"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Godox</span>
+            <strong>Godox AD200Pro II Pocket Flash</strong>
+            <span class="catalog-product-card__details">A modular 200-watt-second flash with interchangeable heads, TTL support and refined color consistency for portable off-camera lighting.</span>
+            <span class="catalog-product-card__footer"><b>$349</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#godox-v1pro-c" data-brand="Godox" aria-label="View details for Godox V1Pro C Round-Head TTL Flash">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/godox-v1pro-c-front.jpg" width="1200" height="900" loading="lazy" alt="Godox V1Pro C Round-Head TTL Flash"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Godox</span>
+            <strong>Godox V1Pro C Round-Head TTL Flash</strong>
+            <span class="catalog-product-card__details">A round-head Canon TTL flash with extended full-power shooting, detachable sub-flash support and magnetic light-shaping accessories.</span>
+            <span class="catalog-product-card__footer"><b>$329</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#godox-knowled-m300r" data-brand="Godox" aria-label="View details for Godox KNOWLED M300R RGBWW LED Light">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/godox-knowled-m300r-front.jpg" width="1200" height="900" loading="lazy" alt="Godox KNOWLED M300R RGBWW LED Light"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Godox</span>
+            <strong>Godox KNOWLED M300R RGBWW LED Light</strong>
+            <span class="catalog-product-card__details">A high-output full-color KNOWLED fixture with wide CCT control and wired or wireless protocols for professional studio and production environments.</span>
+            <span class="catalog-product-card__footer"><b>$2,399</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#aputure-ls-600d-pro" data-brand="Aputure" aria-label="View details for Aputure LS 600d Pro">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/aputure-ls-600d-pro-front.jpg" width="1200" height="900" loading="lazy" alt="Aputure LS 600d Pro"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Aputure</span>
+            <strong>Aputure LS 600d Pro</strong>
+            <span class="catalog-product-card__details">A powerful daylight-balanced Bowens fixture with extensive control protocols and weather-resistant construction for professional studio and location crews.</span>
+            <span class="catalog-product-card__footer"><b>$1,890</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#amaran-200x-s" data-brand="amaran" aria-label="View details for amaran 200x S">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/amaran-200x-s-front.jpg" width="1200" height="900" loading="lazy" alt="amaran 200x S"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">amaran</span>
+            <strong>amaran 200x S</strong>
+            <span class="catalog-product-card__details">A 200-watt bi-color Bowens fixture with improved spectral quality and app control for independent filmmakers and content studios.</span>
+            <span class="catalog-product-card__footer"><b>$349</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#amaran-ace-25c" data-brand="amaran" aria-label="View details for amaran Ace 25c">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/amaran-ace-25c-front.jpg" width="1200" height="900" loading="lazy" alt="amaran Ace 25c"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">amaran</span>
+            <strong>amaran Ace 25c</strong>
+            <span class="catalog-product-card__details">A pocket-size RGBWW light with broad CCT range, high output and magnetic mounting for fast accents and mobile creator kits.</span>
+            <span class="catalog-product-card__footer"><b>$99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#smallrig-rc-220b-pro" data-brand="SmallRig" aria-label="View details for SmallRig RC 220B Pro COB LED Video Light">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/smallrig-rc-220b-pro-front.jpg" width="1200" height="900" loading="lazy" alt="SmallRig RC 220B Pro COB LED Video Light"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">SmallRig</span>
+            <strong>SmallRig RC 220B Pro COB LED Video Light</strong>
+            <span class="catalog-product-card__details">A portable 220-watt bi-color COB fixture with Bowens compatibility, app control and optional V-mount power for location production.</span>
+            <span class="catalog-product-card__footer"><b>$369</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#smallrig-rc-100b-pro" data-brand="SmallRig" aria-label="View details for SmallRig RC 100B COB LED Video Light Pro">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/smallrig-rc-100b-pro-front.jpg" width="1200" height="900" loading="lazy" alt="SmallRig RC 100B COB LED Video Light Pro"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">SmallRig</span>
+            <strong>SmallRig RC 100B COB LED Video Light Pro</strong>
+            <span class="catalog-product-card__details">A lightweight 100-watt bi-color light supporting USB-C, battery and adapter power for highly mobile photo and video setups.</span>
+            <span class="catalog-product-card__footer"><b>$219</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#godox-qr-p90t" data-brand="Godox" aria-label="View details for Godox QR-P90T Quick-Release Parabolic Softbox">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/godox-qr-p90t-front.jpg" width="1200" height="900" loading="lazy" alt="Godox QR-P90T Quick-Release Parabolic Softbox"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Godox</span>
+            <strong>Godox QR-P90T Quick-Release Parabolic Softbox</strong>
+            <span class="catalog-product-card__details">A 90-centimeter Bowens softbox with a quick-release frame and shallow profile for soft portrait and product illumination on location.</span>
+            <span class="catalog-product-card__footer"><b>$119</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#godox-litemons-la200bi" data-brand="Godox" aria-label="View details for Godox Litemons LA200Bi Bi-Color LED Light">
+          <span class="catalog-product-card__image"><img src="images/products/lighting/godox-litemons-la200bi-front.jpg" width="1200" height="900" loading="lazy" alt="Godox Litemons LA200Bi Bi-Color LED Light"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Godox</span>
+            <strong>Godox Litemons LA200Bi Bi-Color LED Light</strong>
+            <span class="catalog-product-card__details">A value-oriented high-output bi-color fixture with Bowens modifiers, Bluetooth control and built-in effects for growing creator studios.</span>
+            <span class="catalog-product-card__footer"><b>$299</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        </div>
+      </section>
+      <section class="catalog-product-panel" id="audio-video" aria-labelledby="audio-video-title">
+        <div class="catalog-product-panel__heading"><div><span>05 / Audio &amp; Video</span><h2 id="audio-video-title">Audio &amp; Video</h2></div></div>
+        <div class="product-card-grid">
+        <a class="catalog-product-card" href="products/catalog-details.html#rode-wireless-pro" data-brand="RØDE" aria-label="View details for RØDE Wireless PRO">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/rode-wireless-pro-front.jpg" width="1200" height="900" loading="lazy" alt="RØDE Wireless PRO"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">RØDE</span>
+            <strong>RØDE Wireless PRO</strong>
+            <span class="catalog-product-card__details">A professional dual-channel wireless kit with 32-bit float backup recording, timecode and long-range Series IV transmission for production sound.</span>
+            <span class="catalog-product-card__footer"><b>$399</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#rode-wireless-me" data-brand="RØDE" aria-label="View details for RØDE Wireless ME">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/rode-wireless-me-front.jpg" width="1200" height="900" loading="lazy" alt="RØDE Wireless ME"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">RØDE</span>
+            <strong>RØDE Wireless ME</strong>
+            <span class="catalog-product-card__details">A simple wireless microphone kit with microphones in both transmitter and receiver plus automatic GainAssist for fast creator recording.</span>
+            <span class="catalog-product-card__footer"><b>$149</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#rode-videomic-ntg" data-brand="RØDE" aria-label="View details for RØDE VideoMic NTG">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/rode-videomic-ntg-front.jpg" width="1200" height="900" loading="lazy" alt="RØDE VideoMic NTG"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">RØDE</span>
+            <strong>RØDE VideoMic NTG</strong>
+            <span class="catalog-product-card__details">A versatile on-camera shotgun microphone that also works as a USB microphone, with variable gain and safety-channel recording controls.</span>
+            <span class="catalog-product-card__footer"><b>$249</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#rode-ntg5" data-brand="RØDE" aria-label="View details for RØDE NTG5">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/rode-ntg5-front.jpg" width="1200" height="900" loading="lazy" alt="RØDE NTG5"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">RØDE</span>
+            <strong>RØDE NTG5</strong>
+            <span class="catalog-product-card__details">A lightweight RF-bias shotgun microphone with low self-noise and controlled off-axis response for boom, location and broadcast capture.</span>
+            <span class="catalog-product-card__footer"><b>$499</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sennheiser-profile-wireless" data-brand="Sennheiser" aria-label="View details for Sennheiser Profile Wireless">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/sennheiser-profile-wireless-front.jpg" width="1200" height="900" loading="lazy" alt="Sennheiser Profile Wireless"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sennheiser</span>
+            <strong>Sennheiser Profile Wireless</strong>
+            <span class="catalog-product-card__details">A two-channel creator system whose charging bar converts into a handheld microphone, with internal recording and multiple connection options.</span>
+            <span class="catalog-product-card__footer"><b>$299</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sennheiser-mke-400" data-brand="Sennheiser" aria-label="View details for Sennheiser MKE 400">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/sennheiser-mke-400-front.jpg" width="1200" height="900" loading="lazy" alt="Sennheiser MKE 400"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sennheiser</span>
+            <strong>Sennheiser MKE 400</strong>
+            <span class="catalog-product-card__details">A compact directional microphone with built-in wind protection, suspension and headphone monitoring for cameras and mobile production rigs.</span>
+            <span class="catalog-product-card__footer"><b>$199</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-mic-2" data-brand="DJI" aria-label="View details for DJI Mic 2 Two-Transmitter Combo">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/dji-mic-2-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Mic 2 Two-Transmitter Combo"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Mic 2 Two-Transmitter Combo</strong>
+            <span class="catalog-product-card__details">A compact dual wireless kit with intelligent noise cancellation, 32-bit float internal recording and a touchscreen charging case.</span>
+            <span class="catalog-product-card__footer"><b>$349</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-mic-mini" data-brand="DJI" aria-label="View details for DJI Mic Mini Two-Transmitter Combo">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/dji-mic-mini-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Mic Mini Two-Transmitter Combo"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Mic Mini Two-Transmitter Combo</strong>
+            <span class="catalog-product-card__details">An ultralight dual-transmitter wireless kit with long battery life, two-level noise cancellation and a pocket charging case for creators.</span>
+            <span class="catalog-product-card__footer"><b>$169</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#zoom-h6essential" data-brand="Zoom" aria-label="View details for Zoom H6essential Handy Recorder">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/zoom-h6essential-front.jpg" width="1200" height="900" loading="lazy" alt="Zoom H6essential Handy Recorder"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Zoom</span>
+            <strong>Zoom H6essential Handy Recorder</strong>
+            <span class="catalog-product-card__details">A 32-bit float handheld recorder with four XLR/TRS inputs, an interchangeable stereo capsule and accessible voice-guided menus.</span>
+            <span class="catalog-product-card__footer"><b>$329.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#zoom-f3" data-brand="Zoom" aria-label="View details for Zoom F3 Field Recorder">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/zoom-f3-front.jpg" width="1200" height="900" loading="lazy" alt="Zoom F3 Field Recorder"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Zoom</span>
+            <strong>Zoom F3 Field Recorder</strong>
+            <span class="catalog-product-card__details">A compact two-input field recorder using dual converters and 32-bit float capture to simplify gain management on demanding location recordings.</span>
+            <span class="catalog-product-card__footer"><b>$349.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#atomos-ninja" data-brand="Atomos" aria-label="View details for Atomos Ninja">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/atomos-ninja-front.jpg" width="1200" height="900" loading="lazy" alt="Atomos Ninja"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Atomos</span>
+            <strong>Atomos Ninja</strong>
+            <span class="catalog-product-card__details">A compact HDR monitor-recorder capturing edit-ready codecs from HDMI cameras to removable SSD media for streamlined on-set workflows.</span>
+            <span class="catalog-product-card__footer"><b>$599</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#atomos-shinobi-ii" data-brand="Atomos" aria-label="View details for Atomos Shinobi II">
+          <span class="catalog-product-card__image"><img src="images/products/audio-video/atomos-shinobi-ii-front.jpg" width="1200" height="900" loading="lazy" alt="Atomos Shinobi II"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Atomos</span>
+            <strong>Atomos Shinobi II</strong>
+            <span class="catalog-product-card__details">A lightweight high-bright monitor adding camera control, touch focus and professional exposure tools without the weight of onboard recording.</span>
+            <span class="catalog-product-card__footer"><b>$379</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        </div>
+      </section>
+      <section class="catalog-product-panel" id="bags" aria-labelledby="bags-title">
+        <div class="catalog-product-panel__heading"><div><span>06 / Bags &amp; Cases</span><h2 id="bags-title">Bags &amp; Cases</h2></div></div>
+        <div class="product-card-grid">
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-everyday-backpack-20l" data-brand="Peak Design" aria-label="View details for Peak Design Everyday Backpack 20L">
+          <span class="catalog-product-card__image"><img src="images/products/bags/peak-design-everyday-backpack-20l-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Everyday Backpack 20L"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Everyday Backpack 20L</strong>
+            <span class="catalog-product-card__details">A configurable everyday camera backpack with MagLatch top access, side zips and FlexFold dividers for photo gear and daily essentials.</span>
+            <span class="catalog-product-card__footer"><b>$279.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-everyday-backpack-zip-20l" data-brand="Peak Design" aria-label="View details for Peak Design Everyday Backpack Zip 20L">
+          <span class="catalog-product-card__image"><img src="images/products/bags/peak-design-everyday-backpack-zip-20l-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Everyday Backpack Zip 20L"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Everyday Backpack Zip 20L</strong>
+            <span class="catalog-product-card__details">A streamlined camera backpack with a full 270-degree zipper, configurable dividers and dedicated device storage for commuting and travel.</span>
+            <span class="catalog-product-card__footer"><b>$229.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-travel-backpack-45l" data-brand="Peak Design" aria-label="View details for Peak Design Travel Backpack 45L">
+          <span class="catalog-product-card__image"><img src="images/products/bags/peak-design-travel-backpack-45l-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Travel Backpack 45L"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Travel Backpack 45L</strong>
+            <span class="catalog-product-card__details">A carry-on travel pack expanding from 35 to 45 liters with rear, side and front access plus stowable straps.</span>
+            <span class="catalog-product-card__footer"><b>$299.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-everyday-sling-6l" data-brand="Peak Design" aria-label="View details for Peak Design Everyday Sling 6L">
+          <span class="catalog-product-card__image"><img src="images/products/bags/peak-design-everyday-sling-6l-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Everyday Sling 6L"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Everyday Sling 6L</strong>
+            <span class="catalog-product-card__details">A compact weatherproof sling with a configurable divider and quick-adjust strap for a small mirrorless kit and everyday essentials.</span>
+            <span class="catalog-product-card__footer"><b>$129.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-outdoor-sling-7l" data-brand="Peak Design" aria-label="View details for Peak Design Outdoor Sling 7L">
+          <span class="catalog-product-card__image"><img src="images/products/bags/peak-design-outdoor-sling-7l-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Outdoor Sling 7L"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Outdoor Sling 7L</strong>
+            <span class="catalog-product-card__details">A lightweight weatherproof sling with flexible pockets and a removable stabilizer strap for active travel and small creator kits.</span>
+            <span class="catalog-product-card__footer"><b>$99.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-camera-cube-v2-medium" data-brand="Peak Design" aria-label="View details for Peak Design Camera Cube V2 Medium">
+          <span class="catalog-product-card__image"><img src="images/products/bags/peak-design-camera-cube-v2-medium-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Camera Cube V2 Medium"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Camera Cube V2 Medium</strong>
+            <span class="catalog-product-card__details">A weatherproof padded insert with configurable dividers and side access, designed to organize camera systems inside travel or outdoor bags.</span>
+            <span class="catalog-product-card__footer"><b>$99.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#manfrotto-pro-light-flexloader-l" data-brand="Manfrotto" aria-label="View details for Manfrotto PRO Light Flexloader Backpack L">
+          <span class="catalog-product-card__image"><img src="images/products/bags/manfrotto-pro-light-flexloader-l-front.jpg" width="1200" height="900" loading="lazy" alt="Manfrotto PRO Light Flexloader Backpack L"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Manfrotto</span>
+            <strong>Manfrotto PRO Light Flexloader Backpack L</strong>
+            <span class="catalog-product-card__details">A large professional backpack with shock-protective M-Guard dividers, expandable gimbal storage and rear access for production equipment.</span>
+            <span class="catalog-product-card__footer"><b>$399.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#manfrotto-advanced-gear-backpack-m-iii" data-brand="Manfrotto" aria-label="View details for Manfrotto Advanced Gear Backpack M III">
+          <span class="catalog-product-card__image"><img src="images/products/bags/manfrotto-advanced-gear-backpack-m-iii-front.jpg" width="1200" height="900" loading="lazy" alt="Manfrotto Advanced Gear Backpack M III"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Manfrotto</span>
+            <strong>Manfrotto Advanced Gear Backpack M III</strong>
+            <span class="catalog-product-card__details">A dual-compartment camera backpack with front gear access, personal storage and tripod carrying for day-long photo and video assignments.</span>
+            <span class="catalog-product-card__footer"><b>$169.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#lowepro-protactic-bp-450-aw-iii" data-brand="Lowepro" aria-label="View details for Lowepro ProTactic BP 450 AW III">
+          <span class="catalog-product-card__image"><img src="images/products/bags/lowepro-protactic-bp-450-aw-iii-front.jpg" width="1200" height="900" loading="lazy" alt="Lowepro ProTactic BP 450 AW III"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Lowepro</span>
+            <strong>Lowepro ProTactic BP 450 AW III</strong>
+            <span class="catalog-product-card__details">A rugged modular backpack with four access points, adjustable interior protection and an equipment belt for demanding professional camera setups.</span>
+            <span class="catalog-product-card__footer"><b>$299.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#lowepro-photosport-pro-iii-55l" data-brand="Lowepro" aria-label="View details for Lowepro PhotoSport PRO III 55L">
+          <span class="catalog-product-card__image"><img src="images/products/bags/lowepro-photosport-pro-iii-55l-front.jpg" width="1200" height="900" loading="lazy" alt="Lowepro PhotoSport PRO III 55L"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Lowepro</span>
+            <strong>Lowepro PhotoSport PRO III 55L</strong>
+            <span class="catalog-product-card__details">A technical 55-liter trekking pack combining an adjustable hiking harness with a removable camera insert and hydration-ready storage.</span>
+            <span class="catalog-product-card__footer"><b>$399.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#pelican-1510-protector-case" data-brand="Pelican" aria-label="View details for Pelican 1510 Protector Carry-On Case">
+          <span class="catalog-product-card__image"><img src="images/products/bags/pelican-1510-protector-case-front.jpg" width="1200" height="900" loading="lazy" alt="Pelican 1510 Protector Carry-On Case"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Pelican</span>
+            <strong>Pelican 1510 Protector Carry-On Case</strong>
+            <span class="catalog-product-card__details">A crushproof carry-on hard case with wheels, an automatic pressure valve and customizable protection for cameras in transit.</span>
+            <span class="catalog-product-card__footer"><b>$229.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#think-tank-lens-changer-75-pop-down-v3" data-brand="Think Tank" aria-label="View details for Think Tank Lens Changer 75 Pop Down V3.0">
+          <span class="catalog-product-card__image"><img src="images/products/bags/think-tank-lens-changer-75-pop-down-v3-front.jpg" width="1200" height="900" loading="lazy" alt="Think Tank Lens Changer 75 Pop Down V3.0"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Think Tank</span>
+            <strong>Think Tank Lens Changer 75 Pop Down V3.0</strong>
+            <span class="catalog-product-card__details">An expandable belt pouch sized for a 70-200mm f/2.8 lens, allowing quick changes while keeping glass protected and accessible.</span>
+            <span class="catalog-product-card__footer"><b>$59.75</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        </div>
+      </section>
+      <section class="catalog-product-panel" id="accessories" aria-labelledby="accessories-title">
+        <div class="catalog-product-panel__heading"><div><span>07 / Accessories</span><h2 id="accessories-title">Accessories</h2></div></div>
+        <div class="product-card-grid">
+        <a class="catalog-product-card" href="products/catalog-details.html#sandisk-extreme-pro-sdxc-uhs-ii-v90-128gb" data-brand="SanDisk" aria-label="View details for SanDisk Extreme PRO SDXC UHS-II V90 128GB">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/sandisk-extreme-pro-sdxc-uhs-ii-v90-128gb-front.jpg" width="1200" height="900" loading="lazy" alt="SanDisk Extreme PRO SDXC UHS-II V90 128GB"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">SanDisk</span>
+            <strong>SanDisk Extreme PRO SDXC UHS-II V90 128GB</strong>
+            <span class="catalog-product-card__details">A V90 UHS-II SD card built for sustained high-bitrate capture, rapid bursts and efficient offloads from compatible professional cameras.</span>
+            <span class="catalog-product-card__footer"><b>$189.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sandisk-extreme-pro-cfexpress-type-b-256gb" data-brand="SanDisk" aria-label="View details for SanDisk Extreme PRO CFexpress Type B 256GB">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/sandisk-extreme-pro-cfexpress-type-b-256gb-front.jpg" width="1200" height="900" loading="lazy" alt="SanDisk Extreme PRO CFexpress Type B 256GB"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">SanDisk</span>
+            <strong>SanDisk Extreme PRO CFexpress Type B 256GB</strong>
+            <span class="catalog-product-card__details">A high-speed Type B card supporting sustained RAW 4K capture and fast transfers in compatible cinema and mirrorless cameras.</span>
+            <span class="catalog-product-card__footer"><b>$299.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#lexar-professional-2000x-sdxc-128gb" data-brand="Lexar" aria-label="View details for Lexar Professional 2000x SDXC UHS-II 128GB">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/lexar-professional-2000x-sdxc-128gb-front.jpg" width="1200" height="900" loading="lazy" alt="Lexar Professional 2000x SDXC UHS-II 128GB"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Lexar</span>
+            <strong>Lexar Professional 2000x SDXC UHS-II 128GB</strong>
+            <span class="catalog-product-card__details">A high-performance UHS-II card with fast transfer speeds and rugged environmental protection for high-resolution photo and video capture.</span>
+            <span class="catalog-product-card__footer"><b>$239.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#lexar-professional-cfexpress-type-a-gold-160gb" data-brand="Lexar" aria-label="View details for Lexar Professional CFexpress Type A GOLD 160GB">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/lexar-professional-cfexpress-type-a-gold-160gb-front.jpg" width="1200" height="900" loading="lazy" alt="Lexar Professional CFexpress Type A GOLD 160GB"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Lexar</span>
+            <strong>Lexar Professional CFexpress Type A GOLD 160GB</strong>
+            <span class="catalog-product-card__details">A compact VPG400 Type A card delivering sustained recording performance for compatible Sony cameras shooting high-resolution and high-frame-rate video.</span>
+            <span class="catalog-product-card__footer"><b>$189.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sony-np-fz100" data-brand="Sony" aria-label="View details for Sony NP-FZ100 Rechargeable Battery Pack">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/sony-np-fz100-front.jpg" width="1200" height="900" loading="lazy" alt="Sony NP-FZ100 Rechargeable Battery Pack"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sony</span>
+            <strong>Sony NP-FZ100 Rechargeable Battery Pack</strong>
+            <span class="catalog-product-card__details">A high-capacity InfoLITHIUM Z-series battery reporting remaining charge data in compatible Sony full-frame and APS-C mirrorless cameras.</span>
+            <span class="catalog-product-card__footer"><b>$89.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#canon-lp-e6p" data-brand="Canon" aria-label="View details for Canon Battery Pack LP-E6P">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/canon-lp-e6p-front.jpg" width="1200" height="900" loading="lazy" alt="Canon Battery Pack LP-E6P"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Canon</span>
+            <strong>Canon Battery Pack LP-E6P</strong>
+            <span class="catalog-product-card__details">A high-amperage rechargeable Canon battery designed for compatible EOS bodies and charging with LC-E6 or LC-E6E chargers.</span>
+            <span class="catalog-product-card__footer"><b>$79.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#nikon-en-el15c" data-brand="Nikon" aria-label="View details for Nikon EN-EL15c Rechargeable Li-ion Battery">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/nikon-en-el15c-front.jpg" width="1200" height="900" loading="lazy" alt="Nikon EN-EL15c Rechargeable Li-ion Battery"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Nikon</span>
+            <strong>Nikon EN-EL15c Rechargeable Li-ion Battery</strong>
+            <span class="catalog-product-card__details">A rechargeable Nikon battery supporting compatible cameras and either external charging or in-camera charging where the camera provides that feature.</span>
+            <span class="catalog-product-card__footer"><b>$81.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#smallrig-cage-sony-3667b" data-brand="SmallRig" aria-label="View details for SmallRig Full Camera Cage for Sony Alpha 3667B">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/smallrig-cage-sony-3667b-front.jpg" width="1200" height="900" loading="lazy" alt="SmallRig Full Camera Cage for Sony Alpha 3667B"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">SmallRig</span>
+            <strong>SmallRig Full Camera Cage for Sony Alpha 3667B</strong>
+            <span class="catalog-product-card__details">A form-fitting full cage protecting compatible Sony Alpha bodies while adding Arca, NATO, cold-shoe and threaded accessory mounting points.</span>
+            <span class="catalog-product-card__footer"><b>$89.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#peak-design-slide" data-brand="Peak Design" aria-label="View details for Peak Design Slide Camera Strap">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/peak-design-slide-front.jpg" width="1200" height="900" loading="lazy" alt="Peak Design Slide Camera Strap"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Peak Design</span>
+            <strong>Peak Design Slide Camera Strap</strong>
+            <span class="catalog-product-card__details">A padded quick-adjust strap converting between sling, neck and shoulder carry with removable Anchor Links for fast camera changes.</span>
+            <span class="catalog-product-card__footer"><b>$69.95</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#sony-vf-77cpam2" data-brand="Sony" aria-label="View details for Sony VF-77CPAM2 77mm Circular PL Filter">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/sony-vf-77cpam2-front.jpg" width="1200" height="900" loading="lazy" alt="Sony VF-77CPAM2 77mm Circular PL Filter"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Sony</span>
+            <strong>Sony VF-77CPAM2 77mm Circular PL Filter</strong>
+            <span class="catalog-product-card__details">A slim 77mm circular polarizer using ZEISS T-star coating to reduce reflections while preserving resolution on high-performance lenses.</span>
+            <span class="catalog-product-card__footer"><b>$201.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#canon-lc-e6" data-brand="Canon" aria-label="View details for Canon Battery Charger LC-E6">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/canon-lc-e6-front.jpg" width="1200" height="900" loading="lazy" alt="Canon Battery Charger LC-E6"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">Canon</span>
+            <strong>Canon Battery Charger LC-E6</strong>
+            <span class="catalog-product-card__details">A compact wall charger for Canon LP-E6-series batteries used by numerous EOS DSLR and mirrorless camera bodies.</span>
+            <span class="catalog-product-card__footer"><b>$94.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#smallrig-vb99-pro" data-brand="SmallRig" aria-label="View details for SmallRig VB99 Pro Mini V-Mount Battery 4292">
+          <span class="catalog-product-card__image"><img src="images/products/accessories/smallrig-vb99-pro-front.jpg" width="1200" height="900" loading="lazy" alt="SmallRig VB99 Pro Mini V-Mount Battery 4292"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">SmallRig</span>
+            <strong>SmallRig VB99 Pro Mini V-Mount Battery 4292</strong>
+            <span class="catalog-product-card__details">A compact 99Wh V-mount battery with a color status display, multiple regulated outputs and 100-watt USB-C fast charging.</span>
+            <span class="catalog-product-card__footer"><b>$249.99</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        </div>
+      </section>
+      <section class="catalog-product-panel" id="drones" aria-labelledby="drones-title">
+        <div class="catalog-product-panel__heading"><div><span>08 / Drones</span><h2 id="drones-title">Drones</h2></div></div>
+        <div class="product-card-grid">
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-mini-4-pro" data-brand="DJI" aria-label="View details for DJI Mini 4 Pro with DJI RC-N2">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-mini-4-pro-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Mini 4 Pro with DJI RC-N2"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Mini 4 Pro with DJI RC-N2</strong>
+            <span class="catalog-product-card__details">A sub-249-gram travel drone with vertical 4K HDR capture, omnidirectional sensing and long-range O4 video transmission.</span>
+            <span class="catalog-product-card__footer"><b>$759</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-air-3s" data-brand="DJI" aria-label="View details for DJI Air 3S with DJI RC-N3">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-air-3s-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Air 3S with DJI RC-N3"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Air 3S with DJI RC-N3</strong>
+            <span class="catalog-product-card__details">A dual-camera travel drone with a one-inch primary sensor, medium tele camera and night-capable omnidirectional obstacle sensing.</span>
+            <span class="catalog-product-card__footer"><b>$1,099</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-mavic-3-pro" data-brand="DJI" aria-label="View details for DJI Mavic 3 Pro with DJI RC">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-mavic-3-pro-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Mavic 3 Pro with DJI RC"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Mavic 3 Pro with DJI RC</strong>
+            <span class="catalog-product-card__details">A flagship folding drone combining a Four Thirds Hasselblad camera with two tele cameras for versatile professional aerial storytelling.</span>
+            <span class="catalog-product-card__footer"><b>$2,199</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-avata-2" data-brand="DJI" aria-label="View details for DJI Avata 2 Fly More Combo">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-avata-2-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Avata 2 Fly More Combo"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Avata 2 Fly More Combo</strong>
+            <span class="catalog-product-card__details">An immersive FPV drone with integrated propeller guards, wide 4K capture and motion control for dynamic close-proximity flight sequences.</span>
+            <span class="catalog-product-card__footer"><b>$1,199</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-neo" data-brand="DJI" aria-label="View details for DJI Neo">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-neo-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Neo"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Neo</strong>
+            <span class="catalog-product-card__details">A palm-launched personal drone with full propeller guards, automatic subject tracking and stabilized 4K video for beginner-friendly vlogging.</span>
+            <span class="catalog-product-card__footer"><b>$169</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-inspire-3" data-brand="DJI" aria-label="View details for DJI Inspire 3">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-inspire-3-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Inspire 3"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Inspire 3</strong>
+            <span class="catalog-product-card__details">A full-frame cinema drone with 8K CinemaDNG recording, RTK positioning and dual-operator control for high-end motion-picture production.</span>
+            <span class="catalog-product-card__footer"><b>$16,499</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-matrice-4t" data-brand="DJI" aria-label="View details for DJI Matrice 4T">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-matrice-4t-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Matrice 4T"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Matrice 4T</strong>
+            <span class="catalog-product-card__details">A compact enterprise drone combining wide, telephoto and thermal cameras with laser ranging for inspection, public-safety and search operations.</span>
+            <span class="catalog-product-card__footer"><b>$7,499</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-flip" data-brand="DJI" aria-label="View details for DJI Flip with DJI RC-N3">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-flip-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Flip with DJI RC-N3"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Flip with DJI RC-N3</strong>
+            <span class="catalog-product-card__details">A sub-249-gram vlog drone with foldable full-coverage propeller guards, palm launch and 4K HDR subject-tracking capture.</span>
+            <span class="catalog-product-card__footer"><b>$439</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-rc-2" data-brand="DJI" aria-label="View details for DJI RC 2">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-rc-2-front.jpg" width="1200" height="900" loading="lazy" alt="DJI RC 2"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI RC 2</strong>
+            <span class="catalog-product-card__details">A lightweight controller with a bright built-in display, O4 transmission and four-antenna reception for compatible current DJI camera drones.</span>
+            <span class="catalog-product-card__footer"><b>$369</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-rc-pro" data-brand="DJI" aria-label="View details for DJI RC Pro">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-rc-pro-front.jpg" width="1200" height="900" loading="lazy" alt="DJI RC Pro"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI RC Pro</strong>
+            <span class="catalog-product-card__details">A high-bright professional controller with O3+ transmission, responsive processing and third-party app support for compatible DJI aircraft.</span>
+            <span class="catalog-product-card__footer"><b>$1,199</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-goggles-3" data-brand="DJI" aria-label="View details for DJI Goggles 3">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-goggles-3-front.jpg" width="1200" height="900" loading="lazy" alt="DJI Goggles 3"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI Goggles 3</strong>
+            <span class="catalog-product-card__details">Immersive O4 goggles with dual micro-OLED displays, real-view picture-in-picture and integrated headband power for compatible DJI flight systems.</span>
+            <span class="catalog-product-card__footer"><b>$499</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        <a class="catalog-product-card" href="products/catalog-details.html#dji-fpv-remote-controller-3" data-brand="DJI" aria-label="View details for DJI FPV Remote Controller 3">
+          <span class="catalog-product-card__image"><img src="images/products/drones/dji-fpv-remote-controller-3-front.jpg" width="1200" height="900" loading="lazy" alt="DJI FPV Remote Controller 3"></span>
+          <span class="catalog-product-card__body">
+            <span class="catalog-product-card__brand">DJI</span>
+            <strong>DJI FPV Remote Controller 3</strong>
+            <span class="catalog-product-card__details">A compact O4-compatible controller adding full manual flight mode and simulator support for advanced Avata 2 and Neo pilots.</span>
+            <span class="catalog-product-card__footer"><b>$199</b><span>New</span></span>
+            <span class="catalog-product-card__action">View Details</span>
+          </span>
+        </a>
+        </div>
+      </section>
       </div>
+      <!-- END STATIC CATALOG -->
     </section>
 
-    <aside class="container catalog-information-note">
-      <div>
-        <span>Reference catalogue</span>
-        <p>Prices are manufacturer list or store reference prices in USD. Confirm current price, stock and included accessories before buying.</p>
-      </div>
-      <a class="text-link" href="contact.html">Contact the store <span aria-hidden="true">&rarr;</span></a>
-    </aside>
   </main>
 
   <!-- Shared call to action -->
@@ -73,6 +1121,7 @@
     </div>
   </section>
 
+  <!-- Shared footer: navigation, contact information and legal links -->
   <footer class="site-footer" id="site-footer">
     <div class="container footer__grid">
       <section class="footer__brand" aria-labelledby="footer-brand-title">
@@ -111,9 +1160,108 @@
       <nav class="footer__legal" aria-label="Legal information"><a href="privacy-policy.html">Privacy Policy</a><span aria-hidden="true">|</span><a href="terms-of-use.html">Terms of Use</a></nav>
     </div>
   </footer>
-  <script src="js/product-data.js" defer></script>
-  <script src="js/product-menu.js" defer></script>
-  <script src="js/products-catalog.js" defer></script>
+
+    <!-- BEGIN STATIC SEARCH -->
+    <p class="sr-only" id="static-search-help">Suggestions list product names. Search opens the full static catalogue; use category links or your browser's Find command to locate a product.</p>
+    <datalist id="product-name-suggestions">
+      <option value="Sony Alpha 7 IV" label="Sony"></option>
+      <option value="Canon EOS R6 Mark II" label="Canon"></option>
+      <option value="Nikon Z6III" label="Nikon"></option>
+      <option value="Fujifilm X-T5" label="Fujifilm"></option>
+      <option value="Panasonic LUMIX S5II" label="Panasonic"></option>
+      <option value="Leica Q3" label="Leica"></option>
+      <option value="Canon EOS R50" label="Canon"></option>
+      <option value="Nikon D780" label="Nikon"></option>
+      <option value="Sony Cyber-shot RX100 VII" label="Sony"></option>
+      <option value="Fujifilm instax mini Evo" label="Fujifilm"></option>
+      <option value="GoPro HERO13 Black" label="GoPro"></option>
+      <option value="DJI Osmo Action 5 Pro" label="DJI"></option>
+      <option value="Canon RF50mm F1.8 STM" label="Canon"></option>
+      <option value="Sony FE 24-70mm F2.8 GM II" label="Sony"></option>
+      <option value="NIKKOR Z 85mm f/1.8 S" label="Nikon"></option>
+      <option value="Fujinon XF23mmF1.4 R LM WR" label="Fujifilm"></option>
+      <option value="Panasonic LUMIX S 100mm F2.8 MACRO" label="Panasonic"></option>
+      <option value="Sigma 14-24mm F2.8 DG DN | Art" label="Sigma"></option>
+      <option value="Tamron 28-75mm F/2.8 Di III VXD G2" label="Tamron"></option>
+      <option value="Canon RF100-500mm F4.5-7.1 L IS USM" label="Canon"></option>
+      <option value="Sony FE 90mm F2.8 Macro G OSS" label="Sony"></option>
+      <option value="NIKKOR Z 14-30mm f/4 S" label="Nikon"></option>
+      <option value="Fujinon XF70-300mmF4-5.6 R LM OIS WR" label="Fujifilm"></option>
+      <option value="Sigma 35mm F1.4 DG DN | Art" label="Sigma"></option>
+      <option value="Peak Design Travel Tripod Carbon" label="Peak Design"></option>
+      <option value="Peak Design Travel Tripod Aluminum" label="Peak Design"></option>
+      <option value="Manfrotto Befree Advanced Aluminum Travel Tripod" label="Manfrotto"></option>
+      <option value="Manfrotto Befree GT XPRO Carbon Travel Tripod" label="Manfrotto"></option>
+      <option value="Manfrotto MT055CXPRO3 055 Carbon Tripod" label="Manfrotto"></option>
+      <option value="Manfrotto MT190XPRO4 190 Aluminum Tripod" label="Manfrotto"></option>
+      <option value="Manfrotto Nitrotech 608 with 645 Fast Twin Carbon" label="Manfrotto"></option>
+      <option value="Manfrotto Element MII Aluminum Monopod" label="Manfrotto"></option>
+      <option value="Gitzo Traveler Series 1 Tripod Kit GK1545T-82TQD" label="Gitzo"></option>
+      <option value="Gitzo Mountaineer Series 2 Tripod GT2542" label="Gitzo"></option>
+      <option value="SmallRig FreeBlazer AD-100 Carbon Video Tripod Kit 3989" label="SmallRig"></option>
+      <option value="SmallRig CT-10 Aluminum Camera Tripod 3935" label="SmallRig"></option>
+      <option value="Godox SL60IIBi Bi-Color LED Video Light" label="Godox"></option>
+      <option value="Godox ML60Bi Bi-Color LED Light" label="Godox"></option>
+      <option value="Godox AD200Pro II Pocket Flash" label="Godox"></option>
+      <option value="Godox V1Pro C Round-Head TTL Flash" label="Godox"></option>
+      <option value="Godox KNOWLED M300R RGBWW LED Light" label="Godox"></option>
+      <option value="Aputure LS 600d Pro" label="Aputure"></option>
+      <option value="amaran 200x S" label="amaran"></option>
+      <option value="amaran Ace 25c" label="amaran"></option>
+      <option value="SmallRig RC 220B Pro COB LED Video Light" label="SmallRig"></option>
+      <option value="SmallRig RC 100B COB LED Video Light Pro" label="SmallRig"></option>
+      <option value="Godox QR-P90T Quick-Release Parabolic Softbox" label="Godox"></option>
+      <option value="Godox Litemons LA200Bi Bi-Color LED Light" label="Godox"></option>
+      <option value="RØDE Wireless PRO" label="RØDE"></option>
+      <option value="RØDE Wireless ME" label="RØDE"></option>
+      <option value="RØDE VideoMic NTG" label="RØDE"></option>
+      <option value="RØDE NTG5" label="RØDE"></option>
+      <option value="Sennheiser Profile Wireless" label="Sennheiser"></option>
+      <option value="Sennheiser MKE 400" label="Sennheiser"></option>
+      <option value="DJI Mic 2 Two-Transmitter Combo" label="DJI"></option>
+      <option value="DJI Mic Mini Two-Transmitter Combo" label="DJI"></option>
+      <option value="Zoom H6essential Handy Recorder" label="Zoom"></option>
+      <option value="Zoom F3 Field Recorder" label="Zoom"></option>
+      <option value="Atomos Ninja" label="Atomos"></option>
+      <option value="Atomos Shinobi II" label="Atomos"></option>
+      <option value="Peak Design Everyday Backpack 20L" label="Peak Design"></option>
+      <option value="Peak Design Everyday Backpack Zip 20L" label="Peak Design"></option>
+      <option value="Peak Design Travel Backpack 45L" label="Peak Design"></option>
+      <option value="Peak Design Everyday Sling 6L" label="Peak Design"></option>
+      <option value="Peak Design Outdoor Sling 7L" label="Peak Design"></option>
+      <option value="Peak Design Camera Cube V2 Medium" label="Peak Design"></option>
+      <option value="Manfrotto PRO Light Flexloader Backpack L" label="Manfrotto"></option>
+      <option value="Manfrotto Advanced Gear Backpack M III" label="Manfrotto"></option>
+      <option value="Lowepro ProTactic BP 450 AW III" label="Lowepro"></option>
+      <option value="Lowepro PhotoSport PRO III 55L" label="Lowepro"></option>
+      <option value="Pelican 1510 Protector Carry-On Case" label="Pelican"></option>
+      <option value="Think Tank Lens Changer 75 Pop Down V3.0" label="Think Tank"></option>
+      <option value="SanDisk Extreme PRO SDXC UHS-II V90 128GB" label="SanDisk"></option>
+      <option value="SanDisk Extreme PRO CFexpress Type B 256GB" label="SanDisk"></option>
+      <option value="Lexar Professional 2000x SDXC UHS-II 128GB" label="Lexar"></option>
+      <option value="Lexar Professional CFexpress Type A GOLD 160GB" label="Lexar"></option>
+      <option value="Sony NP-FZ100 Rechargeable Battery Pack" label="Sony"></option>
+      <option value="Canon Battery Pack LP-E6P" label="Canon"></option>
+      <option value="Nikon EN-EL15c Rechargeable Li-ion Battery" label="Nikon"></option>
+      <option value="SmallRig Full Camera Cage for Sony Alpha 3667B" label="SmallRig"></option>
+      <option value="Peak Design Slide Camera Strap" label="Peak Design"></option>
+      <option value="Sony VF-77CPAM2 77mm Circular PL Filter" label="Sony"></option>
+      <option value="Canon Battery Charger LC-E6" label="Canon"></option>
+      <option value="SmallRig VB99 Pro Mini V-Mount Battery 4292" label="SmallRig"></option>
+      <option value="DJI Mini 4 Pro with DJI RC-N2" label="DJI"></option>
+      <option value="DJI Air 3S with DJI RC-N3" label="DJI"></option>
+      <option value="DJI Mavic 3 Pro with DJI RC" label="DJI"></option>
+      <option value="DJI Avata 2 Fly More Combo" label="DJI"></option>
+      <option value="DJI Neo" label="DJI"></option>
+      <option value="DJI Inspire 3" label="DJI"></option>
+      <option value="DJI Matrice 4T" label="DJI"></option>
+      <option value="DJI Flip with DJI RC-N3" label="DJI"></option>
+      <option value="DJI RC 2" label="DJI"></option>
+      <option value="DJI RC Pro" label="DJI"></option>
+      <option value="DJI Goggles 3" label="DJI"></option>
+      <option value="DJI FPV Remote Controller 3" label="DJI"></option>
+    </datalist>
+    <!-- END STATIC SEARCH -->
 </body>
 
 </html>

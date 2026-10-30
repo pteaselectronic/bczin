@@ -21,3 +21,9 @@ The About page uses representative stock photography. These images do not depict
 ## License
 
 - Pexels License: https://www.pexels.com/license/
+
+## SokPheak founder illustration
+
+- Local file: `images/about/sokpheak-founder-portrait-v2.png`
+- Source: user-selected straw-hat cartoon portrait from this project conversation, restored from the existing local image artifact.
+- Usage: user-directed founder illustration; not a documentary photograph.

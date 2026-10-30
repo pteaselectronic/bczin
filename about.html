@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Page setup and metadata -->
     <meta charset="UTF-8">
@@ -12,6 +11,7 @@
     <link rel="icon" href="images/brand/pteas-camera-logo.png">
     <!-- Shared stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/static-catalog.css">
 </head>
 
 <body class="secondary-page about-page" id="top">
@@ -58,16 +58,16 @@
 
             <!-- Header actions -->
             <div class="header-actions">
-                <form class="header-search-form" action="products.html" method="get" role="search">
+                <form class="header-search-form" action="products.html#catalog-search-help" method="get" role="search">
                     <label for="about-search-input" class="sr-only">Search products</label>
-                    <div class="header-search-bar">
+                    <label class="header-search-bar" for="about-search-input">
                         <svg class="header-search-bar__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                             <circle cx="10.75" cy="10.75" r="6.5"></circle>
                             <path d="m15.6 15.6 4.65 4.65"></path>
                         </svg>
                         <input id="about-search-input" class="header-search-bar__input" type="search" name="q"
-                            placeholder="Search products..." autocomplete="off">
-                    </div>
+                            placeholder="Search products..." autocomplete="off" list="product-name-suggestions" aria-describedby="static-search-help" title="Product-name suggestions only. Submit to browse the catalogue; use Ctrl+F or Cmd+F to find text.">
+                    </label>
                 </form>
                 <a class="button button--small" href="contact.html">Let's talk</a>
             </div>
@@ -87,10 +87,6 @@
                 <p class="eyebrow eyebrow--light">PTEAS CAMERA &middot; SIEM REAP</p>
                 <h1 id="page-title">Clear gear choices for every <span>creator.</span></h1>
                 <p>Explore cameras and creator gear with practical in-store guidance before you choose.</p>
-                <div class="about-concept-hero__actions">
-                    <a class="button" href="products.html">Explore products</a>
-                    <a class="button button--ghost-light" href="contact.html">Visit the shop</a>
-                </div>
             </div>
         </section>
 
@@ -138,30 +134,38 @@
         </section>
 
         <!-- What we do -->
-        <section class="about-concept-offers" aria-labelledby="offers-title">
+        <section class="service-card-section service-card-section--about service-card-section--no-image" aria-labelledby="about-services-title">
             <div class="container">
-                <div class="about-concept-heading">
+                <header class="service-card-section__heading">
                     <p class="section-index">03 / WHAT WE DO</p>
-                    <h2 id="offers-title">Practical help for every setup.</h2>
-                </div>
-                <div class="about-concept-offers__grid">
-                    <article>
-                        <span>01</span>
-                        <h3>Compare gear</h3>
-                        <p>Compare handling, controls and key differences across available cameras and creator gear.</p>
-                        <a href="services.html#compare">Explore comparison <span aria-hidden="true">&rarr;</span></a>
+                    <h2 id="about-services-title">Camera Gear and Support, All in One Place</h2>
+                    <p>At PTEAS Camera, we offer cameras, lenses, accessories, and camera-related services to support your photography and video needs.</p>
+                    <div class="about-concept-offers__actions">
+                        <a class="button" href="products.html">Explore Products</a>
+                        <a class="button button--outline" href="services.html">View Services</a>
+                    </div>
+                </header>
+                <div class="service-card-grid">
+                    <article class="service-card">
+                        <div class="service-card__content">
+                            <span>01</span>
+                            <h3>Cameras &amp; Equipment</h3>
+                            <p>Explore cameras, lenses, lighting, audio gear, tripods, and accessories for your setup.</p>
+                        </div>
                     </article>
-                    <article class="about-concept-offers__featured">
-                        <span>02</span>
-                        <h3>Plan a kit</h3>
-                        <p>Build a practical camera, lens, audio, lighting and support setup around one creative goal.</p>
-                        <a href="services.html#kit-planning">Explore kit planning <span aria-hidden="true">&rarr;</span></a>
+                    <article class="service-card">
+                        <div class="service-card__content">
+                            <span>02</span>
+                            <h3>Advice &amp; Guidance</h3>
+                            <p>Get help choosing equipment that fits your needs, experience, and budget.</p>
+                        </div>
                     </article>
-                    <article>
-                        <span>03</span>
-                        <h3>Care for gear</h3>
-                        <p>Start cleaning, maintenance and repair questions with a clear equipment assessment.</p>
-                        <a href="services.html#cleaning">Explore care support <span aria-hidden="true">&rarr;</span></a>
+                    <article class="service-card">
+                        <div class="service-card__content">
+                            <span>03</span>
+                            <h3>Camera Services</h3>
+                            <p>Discover our available services and find the support you need for your equipment.</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -185,64 +189,25 @@
             </div>
         </section>
 
-        <!-- Founder / CEO profile placeholder: replace with approved Pteas details before publishing. -->
+        <!-- Founder / CEO profile -->
         <section class="about-concept-founder" aria-labelledby="founder-title">
             <div class="container about-concept-founder__grid">
                 <figure class="about-concept-founder__portrait">
-                    <img src="images/about/founder-illustrative-placeholder.png" width="2048" height="2048"
+                    <img src="images/about/sokpheak-founder-portrait-v2.png" width="1254" height="1254"
                         loading="lazy" decoding="async"
-                        alt="Illustrative founder portrait placeholder in a camera workspace">
+                        alt="Cartoon portrait illustration of SokPheak wearing a straw hat, founder and CEO of Pteas Camera">
                 </figure>
                 <div class="about-concept-founder__copy">
                     <p class="section-index">05 / FOUNDER &amp; CEO</p>
-                    <h2 id="founder-title">A founder profile, ready for your real story.</h2>
-                    <p>Use this space to introduce the person behind Pteas Camera: their background, approach to camera
-                        gear and the kind of support customers can expect in the shop.</p>
-                    <p class="about-concept-placeholder-note">Illustrative portrait only &mdash; replace with an approved
-                        founder photo, name and biography before publishing.</p>
+                    <h2 id="founder-title">Meet SokPheak, the founder behind Pteas Camera.</h2>
+                    <p>SokPheak believes choosing camera gear should feel clear, practical and personal. Every
+                        conversation starts with what you want to photograph, film or create&mdash;not simply the most
+                        expensive option.</p>
+                    <p>From a first camera to a refined creator kit, the focus is on hands-on comparison, compatible
+                        equipment and clear next steps before you buy.</p>
                 </div>
             </div>
         </section>
-
-        <!-- Review copy is clearly marked as a template until verified customer feedback is available. -->
-        <section class="about-concept-feedback" aria-labelledby="feedback-title">
-            <div class="container">
-                <div class="about-concept-heading about-concept-feedback__heading">
-                    <p class="section-index">06 / CUSTOMER FEEDBACK</p>
-                    <h2 id="feedback-title">A review layout ready for real customer stories.</h2>
-                    <p>These sample cards are for design preview only. Replace every quote and profile with verified,
-                        permissioned customer feedback before publishing.</p>
-                </div>
-                <div class="about-concept-feedback__grid">
-                    <article>
-                        <span>Sample feedback</span>
-                        <blockquote>&ldquo;The side-by-side comparison helped me understand what would fit the way I shoot
-                            instead of simply choosing the most expensive option.&rdquo;</blockquote>
-                        <p><strong>Sample reviewer 01</strong><small>Replace with verified customer</small></p>
-                    </article>
-                    <article>
-                        <span>Sample feedback</span>
-                        <blockquote>&ldquo;I arrived with a simple question about a camera body and left with a clearer idea
-                            of the lens, memory card and battery setup to consider.&rdquo;</blockquote>
-                        <p><strong>Sample reviewer 02</strong><small>Replace with verified customer</small></p>
-                    </article>
-                    <article>
-                        <span>Sample feedback</span>
-                        <blockquote>&ldquo;The practical explanation made it easier to compare two options and decide what I
-                            should confirm before purchasing.&rdquo;</blockquote>
-                        <p><strong>Sample reviewer 03</strong><small>Replace with verified customer</small></p>
-                    </article>
-                    <article>
-                        <span>Sample feedback</span>
-                        <blockquote>&ldquo;The layout makes it simple to share a short experience about a camera, lens or
-                            complete creator kit after an in-store visit.&rdquo;</blockquote>
-                        <p><strong>Sample reviewer 04</strong><small>Replace with verified customer</small></p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-
 
         <!-- Shared call to action -->
         <section class="site-action" aria-labelledby="site-action-title">
@@ -365,7 +330,108 @@
                 </nav>
             </div>
         </footer>
-        <script src="js/product-menu.js" defer></script>
+
+    <!-- BEGIN STATIC SEARCH -->
+    <p class="sr-only" id="static-search-help">Suggestions list product names. Search opens the full static catalogue; use category links or your browser's Find command to locate a product.</p>
+    <datalist id="product-name-suggestions">
+      <option value="Sony Alpha 7 IV" label="Sony"></option>
+      <option value="Canon EOS R6 Mark II" label="Canon"></option>
+      <option value="Nikon Z6III" label="Nikon"></option>
+      <option value="Fujifilm X-T5" label="Fujifilm"></option>
+      <option value="Panasonic LUMIX S5II" label="Panasonic"></option>
+      <option value="Leica Q3" label="Leica"></option>
+      <option value="Canon EOS R50" label="Canon"></option>
+      <option value="Nikon D780" label="Nikon"></option>
+      <option value="Sony Cyber-shot RX100 VII" label="Sony"></option>
+      <option value="Fujifilm instax mini Evo" label="Fujifilm"></option>
+      <option value="GoPro HERO13 Black" label="GoPro"></option>
+      <option value="DJI Osmo Action 5 Pro" label="DJI"></option>
+      <option value="Canon RF50mm F1.8 STM" label="Canon"></option>
+      <option value="Sony FE 24-70mm F2.8 GM II" label="Sony"></option>
+      <option value="NIKKOR Z 85mm f/1.8 S" label="Nikon"></option>
+      <option value="Fujinon XF23mmF1.4 R LM WR" label="Fujifilm"></option>
+      <option value="Panasonic LUMIX S 100mm F2.8 MACRO" label="Panasonic"></option>
+      <option value="Sigma 14-24mm F2.8 DG DN | Art" label="Sigma"></option>
+      <option value="Tamron 28-75mm F/2.8 Di III VXD G2" label="Tamron"></option>
+      <option value="Canon RF100-500mm F4.5-7.1 L IS USM" label="Canon"></option>
+      <option value="Sony FE 90mm F2.8 Macro G OSS" label="Sony"></option>
+      <option value="NIKKOR Z 14-30mm f/4 S" label="Nikon"></option>
+      <option value="Fujinon XF70-300mmF4-5.6 R LM OIS WR" label="Fujifilm"></option>
+      <option value="Sigma 35mm F1.4 DG DN | Art" label="Sigma"></option>
+      <option value="Peak Design Travel Tripod Carbon" label="Peak Design"></option>
+      <option value="Peak Design Travel Tripod Aluminum" label="Peak Design"></option>
+      <option value="Manfrotto Befree Advanced Aluminum Travel Tripod" label="Manfrotto"></option>
+      <option value="Manfrotto Befree GT XPRO Carbon Travel Tripod" label="Manfrotto"></option>
+      <option value="Manfrotto MT055CXPRO3 055 Carbon Tripod" label="Manfrotto"></option>
+      <option value="Manfrotto MT190XPRO4 190 Aluminum Tripod" label="Manfrotto"></option>
+      <option value="Manfrotto Nitrotech 608 with 645 Fast Twin Carbon" label="Manfrotto"></option>
+      <option value="Manfrotto Element MII Aluminum Monopod" label="Manfrotto"></option>
+      <option value="Gitzo Traveler Series 1 Tripod Kit GK1545T-82TQD" label="Gitzo"></option>
+      <option value="Gitzo Mountaineer Series 2 Tripod GT2542" label="Gitzo"></option>
+      <option value="SmallRig FreeBlazer AD-100 Carbon Video Tripod Kit 3989" label="SmallRig"></option>
+      <option value="SmallRig CT-10 Aluminum Camera Tripod 3935" label="SmallRig"></option>
+      <option value="Godox SL60IIBi Bi-Color LED Video Light" label="Godox"></option>
+      <option value="Godox ML60Bi Bi-Color LED Light" label="Godox"></option>
+      <option value="Godox AD200Pro II Pocket Flash" label="Godox"></option>
+      <option value="Godox V1Pro C Round-Head TTL Flash" label="Godox"></option>
+      <option value="Godox KNOWLED M300R RGBWW LED Light" label="Godox"></option>
+      <option value="Aputure LS 600d Pro" label="Aputure"></option>
+      <option value="amaran 200x S" label="amaran"></option>
+      <option value="amaran Ace 25c" label="amaran"></option>
+      <option value="SmallRig RC 220B Pro COB LED Video Light" label="SmallRig"></option>
+      <option value="SmallRig RC 100B COB LED Video Light Pro" label="SmallRig"></option>
+      <option value="Godox QR-P90T Quick-Release Parabolic Softbox" label="Godox"></option>
+      <option value="Godox Litemons LA200Bi Bi-Color LED Light" label="Godox"></option>
+      <option value="RØDE Wireless PRO" label="RØDE"></option>
+      <option value="RØDE Wireless ME" label="RØDE"></option>
+      <option value="RØDE VideoMic NTG" label="RØDE"></option>
+      <option value="RØDE NTG5" label="RØDE"></option>
+      <option value="Sennheiser Profile Wireless" label="Sennheiser"></option>
+      <option value="Sennheiser MKE 400" label="Sennheiser"></option>
+      <option value="DJI Mic 2 Two-Transmitter Combo" label="DJI"></option>
+      <option value="DJI Mic Mini Two-Transmitter Combo" label="DJI"></option>
+      <option value="Zoom H6essential Handy Recorder" label="Zoom"></option>
+      <option value="Zoom F3 Field Recorder" label="Zoom"></option>
+      <option value="Atomos Ninja" label="Atomos"></option>
+      <option value="Atomos Shinobi II" label="Atomos"></option>
+      <option value="Peak Design Everyday Backpack 20L" label="Peak Design"></option>
+      <option value="Peak Design Everyday Backpack Zip 20L" label="Peak Design"></option>
+      <option value="Peak Design Travel Backpack 45L" label="Peak Design"></option>
+      <option value="Peak Design Everyday Sling 6L" label="Peak Design"></option>
+      <option value="Peak Design Outdoor Sling 7L" label="Peak Design"></option>
+      <option value="Peak Design Camera Cube V2 Medium" label="Peak Design"></option>
+      <option value="Manfrotto PRO Light Flexloader Backpack L" label="Manfrotto"></option>
+      <option value="Manfrotto Advanced Gear Backpack M III" label="Manfrotto"></option>
+      <option value="Lowepro ProTactic BP 450 AW III" label="Lowepro"></option>
+      <option value="Lowepro PhotoSport PRO III 55L" label="Lowepro"></option>
+      <option value="Pelican 1510 Protector Carry-On Case" label="Pelican"></option>
+      <option value="Think Tank Lens Changer 75 Pop Down V3.0" label="Think Tank"></option>
+      <option value="SanDisk Extreme PRO SDXC UHS-II V90 128GB" label="SanDisk"></option>
+      <option value="SanDisk Extreme PRO CFexpress Type B 256GB" label="SanDisk"></option>
+      <option value="Lexar Professional 2000x SDXC UHS-II 128GB" label="Lexar"></option>
+      <option value="Lexar Professional CFexpress Type A GOLD 160GB" label="Lexar"></option>
+      <option value="Sony NP-FZ100 Rechargeable Battery Pack" label="Sony"></option>
+      <option value="Canon Battery Pack LP-E6P" label="Canon"></option>
+      <option value="Nikon EN-EL15c Rechargeable Li-ion Battery" label="Nikon"></option>
+      <option value="SmallRig Full Camera Cage for Sony Alpha 3667B" label="SmallRig"></option>
+      <option value="Peak Design Slide Camera Strap" label="Peak Design"></option>
+      <option value="Sony VF-77CPAM2 77mm Circular PL Filter" label="Sony"></option>
+      <option value="Canon Battery Charger LC-E6" label="Canon"></option>
+      <option value="SmallRig VB99 Pro Mini V-Mount Battery 4292" label="SmallRig"></option>
+      <option value="DJI Mini 4 Pro with DJI RC-N2" label="DJI"></option>
+      <option value="DJI Air 3S with DJI RC-N3" label="DJI"></option>
+      <option value="DJI Mavic 3 Pro with DJI RC" label="DJI"></option>
+      <option value="DJI Avata 2 Fly More Combo" label="DJI"></option>
+      <option value="DJI Neo" label="DJI"></option>
+      <option value="DJI Inspire 3" label="DJI"></option>
+      <option value="DJI Matrice 4T" label="DJI"></option>
+      <option value="DJI Flip with DJI RC-N3" label="DJI"></option>
+      <option value="DJI RC 2" label="DJI"></option>
+      <option value="DJI RC Pro" label="DJI"></option>
+      <option value="DJI Goggles 3" label="DJI"></option>
+      <option value="DJI FPV Remote Controller 3" label="DJI"></option>
+    </datalist>
+    <!-- END STATIC SEARCH -->
 </body>
 
 </html>

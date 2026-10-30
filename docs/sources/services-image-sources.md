@@ -1,5 +1,12 @@
 # Services page image sources
 
+## How We Help camera rig
+
+- Local file: `images/services/services-help-camera-rig.png`
+- Source: Image supplied by the user in this conversation on 2026-10-30.
+- Placement: Services page, How We Help introduction.
+- The original 828 x 1028 attachment is stored locally and displayed inside the existing square frame. No external source URL was supplied.
+
 The Services page uses representative stock photography. The people, locations, equipment and repair scenes shown do not depict Pteas Camera staff, its shop, its workshop or completed customer work.
 
 ## Photography team hero
@@ -29,3 +36,27 @@ The Services page uses representative stock photography. The people, locations, 
 ## License
 
 - Pexels License: https://www.pexels.com/license/
+
+## Creator kit planning
+
+- Local file: `images/services/service-kit-planning-tripod.jpg`
+- Photo: "Photo camera on tripod in studio" by Allec Gomes
+- Source page: https://www.pexels.com/photo/photo-camera-on-tripod-in-studio-4737201/
+- Download: https://images.pexels.com/photos/4737201/pexels-photo-4737201.jpeg
+- Usage: Pexels License. Representative service photography used on Home and About.
+
+## Setup and compatibility
+
+- Local file: `images/services/service-setup-video-camera.jpg`
+- Photo: "Black Canon Video Camera With Microphone on Desk" by Bruno Massao
+- Source page: https://www.pexels.com/photo/black-canon-video-camera-with-microphone-on-desk-2170449/
+- Download: https://images.pexels.com/photos/2170449/pexels-photo-2170449.jpeg
+- Usage: Pexels License. Representative service photography used on Home and About.
+
+## Lens cleaning
+
+- Local file: `images/services/service-lens-cleaning.jpg`
+- Photo: "Man Cleaning Camera Lens" by Ikaia Pal
+- Source page: https://www.pexels.com/photo/man-cleaning-camera-lens-11115462/
+- Download: https://images.pexels.com/photos/11115462/pexels-photo-11115462.jpeg
+- Usage: Pexels License. Representative service photography used on Home and About.
