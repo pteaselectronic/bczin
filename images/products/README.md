@@ -9,7 +9,7 @@ images/products/
 |-- tripods/
 |-- lighting/
 |-- audio-video/
-|-- bags-cases/
+|-- bags/
 |-- accessories/
 `-- drones/
 ```

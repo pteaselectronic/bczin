@@ -102,12 +102,22 @@
 
     <main id="main-content">
         <!-- 01. Hero -->
-        <section class="home-hero" aria-label="Featured video">
-            <h1 class="sr-only">Pteas Camera | Cameras, Lenses &amp; Creator Gear</h1>
+        <section class="home-hero" aria-labelledby="home-hero-title">
             <video class="home-hero__image home-hero__video" autoplay loop muted playsinline preload="metadata"
                 poster="images/home/hero-camera-gear.jpg" aria-label="Sony mirrorless camera demonstration">
                 <source src="images/home/sony-mirrorless-camera-hero.mp4" type="video/mp4">
             </video>
+            <div class="home-hero__overlay" aria-hidden="true"></div>
+            <div class="container home-hero__content">
+                <p class="home-kicker home-kicker--light">Pteas Camera · Siem Reap</p>
+                <h1 id="home-hero-title">Find the gear for <span>your next idea.</span></h1>
+                <p class="home-hero__lead">Real cameras, lenses and creator gear with practical in-store guidance before
+                    you buy.</p>
+                <div class="home-hero__actions">
+                    <a class="button" href="products.html">Explore products</a>
+                    <a class="button button--ghost" href="contact.html#location">Visit the shop</a>
+                </div>
+            </div>
         </section>
 
         <!-- 02. Shop by category -->
@@ -118,13 +128,11 @@
                         <p class="home-kicker">Browse the catalogue</p>
                         <h2 id="home-categories-title">Shop by Category</h2>
                     </div>
-                    <p>Start with the gear you need, then open any listing for price, condition, images and product
-                        details.</p>
                 </div>
 
                 <div class="home-category-grid">
                     <a class="home-category-card" href="products.html#cameras">
-                        <img src="images/home/category-cameras.jpg" width="1024" height="1024"
+                        <img src="images/home/category-cameras-transparent.png" width="1254" height="1254"
                             alt="Mirrorless camera body with lens" loading="lazy" decoding="async">
                         <span>
                             <small>01</small>
@@ -136,7 +144,7 @@
                         </span>
                     </a>
                     <a class="home-category-card" href="products.html#lenses">
-                        <img src="images/home/category-lenses.jpg" width="1024" height="1024"
+                        <img src="images/home/category-lenses-transparent.png" width="1254" height="1254"
                             alt="Professional camera lens on a studio surface" loading="lazy" decoding="async">
                         <span>
                             <small>02</small>
@@ -148,7 +156,7 @@
                         </span>
                     </a>
                     <a class="home-category-card" href="products.html#tripods">
-                        <img src="images/home/category-tripods.png" width="1024" height="1024"
+                        <img src="images/home/category-tripods-transparent.png" width="1254" height="1254"
                             alt="Camera tripod prepared for photography" loading="lazy" decoding="async">
                         <span>
                             <small>03</small>
@@ -160,7 +168,7 @@
                         </span>
                     </a>
                     <a class="home-category-card" href="products.html#lighting">
-                        <img src="images/home/category-lighting.png" width="1024" height="1024"
+                        <img src="images/home/category-lighting-transparent.png" width="1254" height="1254"
                             alt="Studio lighting equipment for photo and video" loading="lazy" decoding="async">
                         <span>
                             <small>04</small>
@@ -172,7 +180,7 @@
                         </span>
                     </a>
                     <a class="home-category-card" href="products.html#audio-video">
-                        <img src="images/home/category-audio-video.png" width="1024" height="1024"
+                        <img src="images/home/category-audio-video-transparent.png" width="1254" height="1254"
                             alt="Microphone and compact video production equipment" loading="lazy" decoding="async">
                         <span>
                             <small>05</small>
@@ -184,7 +192,7 @@
                         </span>
                     </a>
                     <a class="home-category-card" href="products.html#bags">
-                        <img src="images/home/category-bags.jpg" width="1024" height="1024"
+                        <img src="images/home/category-bags-transparent.png" width="1254" height="1254"
                             alt="Protective camera bag for carrying photography gear" loading="lazy" decoding="async">
                         <span>
                             <small>06</small>
@@ -196,7 +204,7 @@
                         </span>
                     </a>
                     <a class="home-category-card" href="products.html#accessories">
-                        <img src="images/home/category-accessories.jpg" width="1024" height="1024"
+                        <img src="images/home/category-accessories-transparent.png" width="1254" height="1254"
                             alt="Camera batteries, memory cards and everyday accessories" loading="lazy"
                             decoding="async">
                         <span>
@@ -209,7 +217,7 @@
                         </span>
                     </a>
                     <a class="home-category-card" href="products.html#drones">
-                        <img src="images/home/category-drones.png" width="1024" height="1024"
+                        <img src="images/home/category-drones-transparent.png" width="1254" height="1254"
                             alt="Foldable camera drone and controller" loading="lazy" decoding="async">
                         <span>
                             <small>08</small>
@@ -224,16 +232,17 @@
             </div>
         </section>
 
-        <!-- 03. Featured products: factual data reused from the eight detailed catalogue pages. -->
-        <section class="home-section home-featured" aria-labelledby="home-featured-title">
+        <!-- 03. New arrivals: curated new products from the shared catalogue. -->
+        <section class="home-section home-featured" aria-labelledby="home-new-arrivals-title">
             <div class="container">
                 <div class="home-section-heading home-section-heading--products">
                     <div>
-                        <p class="home-kicker">Selected from the catalogue</p>
-                        <h2 id="home-featured-title">Featured Products</h2>
+                        <p class="home-kicker">New to the catalogue</p>
+                        <h2 id="home-new-arrivals-title">New Arrivals</h2>
+                        <p class="home-section-heading__description">Fresh camera, lens and creator gear added to the
+                            catalogue for your next project.</p>
                     </div>
                     <div class="home-section-heading__action">
-                        <p>Prices are indicative and live stock is not shown. Contact the store before visiting.</p>
                         <a class="home-text-link" href="products.html">View All Products <span
                                 aria-hidden="true">&rarr;</span></a>
                     </div>
@@ -241,103 +250,218 @@
 
                 <div class="home-product-grid">
                     <article class="home-product-card">
-                        <a class="home-product-card__image" href="products/vanta-capture-x4.html"
-                            aria-label="View details for Vanta Capture X4">
-                            <img src="images/products/cameras/vanta-capture-x4-alt.jpg" width="1200" height="1200"
-                                alt="Vanta Capture X4 mirrorless camera" loading="lazy" decoding="async">
-                        </a>
-                        <div class="home-product-card__body">
-                            <div class="home-product-card__tags"><span>Used</span><span>Contact for stock</span></div>
-                            <p class="home-product-card__brand">Vanta</p>
-                            <h3>Vanta Capture X4</h3>
-                            <p class="home-product-card__spec">33 MP full-frame sensor</p>
-                            <div class="home-product-card__footer">
-                                <strong>$1,749 <small>indicative</small></strong>
-                                <a href="products/vanta-capture-x4.html">View Details</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="home-product-card">
-                        <a class="home-product-card__image" href="products/orbis-24-70-pro.html"
-                            aria-label="View details for Orbis 24-70mm F2.8 Pro">
-                            <img src="images/products/lenses/orbis-24-70-pro-alt.jpg" width="1200" height="1200"
-                                alt="Orbis 24-70mm F2.8 Pro camera lens" loading="lazy" decoding="async">
+                        <a class="home-product-card__image" href="products/catalog-details.html#nikon-z6iii"
+                            aria-label="View details for Nikon Z6III">
+                            <img src="images/products/cameras/nikon-z6iii-front.jpg" width="1200" height="900"
+                                alt="Nikon Z6III mirrorless camera" loading="lazy" decoding="async">
                         </a>
                         <div class="home-product-card__body">
                             <div class="home-product-card__tags"><span>New</span><span>Contact for stock</span></div>
-                            <p class="home-product-card__brand">Orbis Optics</p>
-                            <h3>Orbis 24-70mm F2.8 Pro</h3>
-                            <p class="home-product-card__spec">Constant F2.8 aperture</p>
+                            <p class="home-product-card__brand">Nikon</p>
+                            <h3>Nikon Z6III</h3>
+                            <p class="home-product-card__spec">24.5 MP partially stacked full-frame sensor</p>
                             <div class="home-product-card__footer">
-                                <strong>$1,199 <small>indicative</small></strong>
-                                <a href="products/orbis-24-70-pro.html">View Details</a>
+                                <strong>$3,299.95 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#nikon-z6iii">View Details</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="home-product-card">
-                        <a class="home-product-card__image" href="products/steadyline-v8-tripod.html"
-                            aria-label="View details for SteadyLine V8 Fluid Tripod">
-                            <img src="images/products/tripods/steadyline-v8-tripod-alt.jpg" width="1200" height="1200"
-                                alt="SteadyLine V8 fluid tripod" loading="lazy" decoding="async">
-                        </a>
-                        <div class="home-product-card__body">
-                            <div class="home-product-card__tags"><span>Used</span><span>Contact for stock</span></div>
-                            <p class="home-product-card__brand">SteadyLine</p>
-                            <h3>SteadyLine V8 Fluid Tripod</h3>
-                            <p class="home-product-card__spec">Fluid head for controlled movement</p>
-                            <div class="home-product-card__footer">
-                                <strong>$159 <small>indicative</small></strong>
-                                <a href="products/steadyline-v8-tripod.html">View Details</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="home-product-card">
-                        <a class="home-product-card__image" href="products/lumapro-studiobox-100.html"
-                            aria-label="View details for StudioBox 100 LED Kit">
-                            <img src="images/products/lighting/lumapro-studiobox-100-alt.jpg" width="1200" height="1200"
-                                alt="LumaPro StudioBox 100 LED lighting kit" loading="lazy" decoding="async">
+                        <a class="home-product-card__image" href="products/catalog-details.html#dji-osmo-action-5-pro"
+                            aria-label="View details for DJI Osmo Action 5 Pro">
+                            <img src="images/products/cameras/dji-osmo-action-5-pro-front.jpg" width="1200" height="900"
+                                alt="DJI Osmo Action 5 Pro action camera" loading="lazy" decoding="async">
                         </a>
                         <div class="home-product-card__body">
                             <div class="home-product-card__tags"><span>New</span><span>Contact for stock</span></div>
-                            <p class="home-product-card__brand">LumaPro</p>
-                            <h3>StudioBox 100 LED Kit</h3>
-                            <p class="home-product-card__spec">100W LED light source</p>
+                            <p class="home-product-card__brand">DJI</p>
+                            <h3>DJI Osmo Action 5 Pro</h3>
+                            <p class="home-product-card__spec">4K 120p action camera with 20 m waterproofing</p>
                             <div class="home-product-card__footer">
-                                <strong>$249 <small>indicative</small></strong>
-                                <a href="products/lumapro-studiobox-100.html">View Details</a>
+                                <strong>$319 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#dji-osmo-action-5-pro">View Details</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="home-product-card">
-                        <a class="home-product-card__image" href="products/aeroview-4k-drone.html"
-                            aria-label="View details for AeroView 4K Foldable Drone">
-                            <img src="images/products/drones/aeroview-4k-drone-alt.jpg" width="1200" height="1200"
-                                alt="AeroView 4K foldable camera drone" loading="lazy" decoding="async">
+                        <a class="home-product-card__image" href="products/catalog-details.html#godox-knowled-m300r"
+                            aria-label="View details for Godox KNOWLED M300R RGBWW LED Light">
+                            <img src="images/products/lighting/godox-knowled-m300r-front.jpg" width="1200" height="900"
+                                alt="Godox KNOWLED M300R RGBWW LED light" loading="lazy" decoding="async">
                         </a>
                         <div class="home-product-card__body">
                             <div class="home-product-card__tags"><span>New</span><span>Contact for stock</span></div>
-                            <p class="home-product-card__brand">AeroView</p>
-                            <h3>AeroView 4K Foldable Drone</h3>
-                            <p class="home-product-card__spec">4K camera with three-axis gimbal</p>
+                            <p class="home-product-card__brand">Godox</p>
+                            <h3>Godox KNOWLED M300R</h3>
+                            <p class="home-product-card__spec">300W full-color RGBWW COB light</p>
                             <div class="home-product-card__footer">
-                                <strong>$899 <small>indicative</small></strong>
-                                <a href="products/aeroview-4k-drone.html">View Details</a>
+                                <strong>$2,399 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#godox-knowled-m300r">View Details</a>
                             </div>
                         </div>
                     </article>
-                    <!-- Additional products available in the full catalogue at products.html:
-                         ClearCast Production Kit, TrekSafe Pro Camera Backpack 28L, Creator Essentials Accessory Kit -->
+
+                    <article class="home-product-card">
+                        <a class="home-product-card__image" href="products/catalog-details.html#rode-wireless-pro"
+                            aria-label="View details for RØDE Wireless PRO">
+                            <img src="images/products/audio-video/rode-wireless-pro-front.jpg" width="1200" height="900"
+                                alt="RØDE Wireless PRO microphone system" loading="lazy" decoding="async">
+                        </a>
+                        <div class="home-product-card__body">
+                            <div class="home-product-card__tags"><span>New</span><span>Contact for stock</span></div>
+                            <p class="home-product-card__brand">RØDE</p>
+                            <h3>RØDE Wireless PRO</h3>
+                            <p class="home-product-card__spec">Dual-channel wireless audio with 32-bit float backup</p>
+                            <div class="home-product-card__footer">
+                                <strong>$399 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#rode-wireless-pro">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="home-product-card">
+                        <a class="home-product-card__image" href="products/catalog-details.html#smallrig-rc-100b-pro"
+                            aria-label="View details for SmallRig RC 100B COB LED Video Light Pro">
+                            <img src="images/products/lighting/smallrig-rc-100b-pro-front.jpg" width="1200" height="900"
+                                alt="SmallRig RC 100B COB LED Video Light Pro" loading="lazy" decoding="async">
+                        </a>
+                        <div class="home-product-card__body">
+                            <div class="home-product-card__tags"><span>New</span><span>Contact for stock</span></div>
+                            <p class="home-product-card__brand">SmallRig</p>
+                            <h3>SmallRig RC 100B Pro</h3>
+                            <p class="home-product-card__spec">100W portable bi-color COB light</p>
+                            <div class="home-product-card__footer">
+                                <strong>$219 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#smallrig-rc-100b-pro">View Details</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- New Arrivals is intentionally omitted: the catalogue contains no verified added dates. -->
+        <!-- 04. Best sellers: curated shop picks from the shared catalogue. -->
+        <section class="home-section home-featured home-featured--secondary" aria-labelledby="home-best-sellers-title">
+            <div class="container">
+                <div class="home-section-heading home-section-heading--products">
+                    <div>
+                        <p class="home-kicker">Popular starting points</p>
+                        <h2 id="home-best-sellers-title">Best Sellers</h2>
+                        <p class="home-section-heading__description">Popular cameras and everyday creator essentials
+                            chosen for practical in-store comparison.</p>
+                    </div>
+                    <div class="home-section-heading__action">
+                        <a class="home-text-link" href="products.html">View All Products <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
 
-        <!-- 04. Verified store benefits -->
+                <div class="home-product-grid">
+                    <article class="home-product-card">
+                        <a class="home-product-card__image" href="products/catalog-details.html#sony-alpha-7-iv"
+                            aria-label="View details for Sony Alpha 7 IV">
+                            <img src="images/products/cameras/sony-alpha-7-iv-front.jpg" width="1200" height="900"
+                                alt="Sony Alpha 7 IV mirrorless camera" loading="lazy" decoding="async">
+                        </a>
+                        <div class="home-product-card__body">
+                            <div class="home-product-card__tags"><span>Shop pick</span><span>Contact for stock</span>
+                            </div>
+                            <p class="home-product-card__brand">Sony</p>
+                            <h3>Sony Alpha 7 IV</h3>
+                            <p class="home-product-card__spec">33 MP full-frame hybrid camera</p>
+                            <div class="home-product-card__footer">
+                                <strong>$2,499.99 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#sony-alpha-7-iv">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="home-product-card">
+                        <a class="home-product-card__image" href="products/catalog-details.html#canon-eos-r6-mark-ii"
+                            aria-label="View details for Canon EOS R6 Mark II">
+                            <img src="images/products/cameras/canon-eos-r6-mark-ii-front.jpg" width="1200" height="900"
+                                alt="Canon EOS R6 Mark II mirrorless camera" loading="lazy" decoding="async">
+                        </a>
+                        <div class="home-product-card__body">
+                            <div class="home-product-card__tags"><span>Shop pick</span><span>Contact for stock</span>
+                            </div>
+                            <p class="home-product-card__brand">Canon</p>
+                            <h3>Canon EOS R6 Mark II</h3>
+                            <p class="home-product-card__spec">24.2 MP full-frame hybrid camera</p>
+                            <div class="home-product-card__footer">
+                                <strong>$2,299 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#canon-eos-r6-mark-ii">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="home-product-card">
+                        <a class="home-product-card__image"
+                            href="products/catalog-details.html#sony-fe-24-70mm-f2-8-gm-ii"
+                            aria-label="View details for Sony FE 24-70mm F2.8 GM II">
+                            <img src="images/products/lenses/sony-fe-24-70mm-f2-8-gm-ii-front.jpg" width="1200"
+                                height="900" alt="Sony FE 24-70mm F2.8 GM II lens" loading="lazy" decoding="async">
+                        </a>
+                        <div class="home-product-card__body">
+                            <div class="home-product-card__tags"><span>Shop pick</span><span>Contact for stock</span>
+                            </div>
+                            <p class="home-product-card__brand">Sony</p>
+                            <h3>Sony FE 24-70mm F2.8 GM II</h3>
+                            <p class="home-product-card__spec">Constant f/2.8 professional standard zoom</p>
+                            <div class="home-product-card__footer">
+                                <strong>$2,449.99 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#sony-fe-24-70mm-f2-8-gm-ii">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="home-product-card">
+                        <a class="home-product-card__image" href="products/catalog-details.html#dji-mini-4-pro"
+                            aria-label="View details for DJI Mini 4 Pro">
+                            <img src="images/products/drones/dji-mini-4-pro-front.jpg" width="1200" height="900"
+                                alt="DJI Mini 4 Pro camera drone" loading="lazy" decoding="async">
+                        </a>
+                        <div class="home-product-card__body">
+                            <div class="home-product-card__tags"><span>Shop pick</span><span>Contact for stock</span>
+                            </div>
+                            <p class="home-product-card__brand">DJI</p>
+                            <h3>DJI Mini 4 Pro</h3>
+                            <p class="home-product-card__spec">Sub-249g drone with 4K HDR video</p>
+                            <div class="home-product-card__footer">
+                                <strong>$759 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#dji-mini-4-pro">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="home-product-card">
+                        <a class="home-product-card__image"
+                            href="products/catalog-details.html#manfrotto-befree-advanced-aluminum"
+                            aria-label="View details for Manfrotto Befree Advanced Aluminum Travel Tripod">
+                            <img src="images/products/tripods/manfrotto-befree-advanced-aluminum-front.jpg" width="1200"
+                                height="900" alt="Manfrotto Befree Advanced Aluminum Travel Tripod" loading="lazy"
+                                decoding="async">
+                        </a>
+                        <div class="home-product-card__body">
+                            <div class="home-product-card__tags"><span>Shop pick</span><span>Contact for stock</span>
+                            </div>
+                            <p class="home-product-card__brand">Manfrotto</p>
+                            <h3>Manfrotto Befree Advanced</h3>
+                            <p class="home-product-card__spec">Compact aluminum travel tripod kit</p>
+                            <div class="home-product-card__footer">
+                                <strong>$259.95 <small>reference</small></strong>
+                                <a href="products/catalog-details.html#manfrotto-befree-advanced-aluminum">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. Verified store benefits -->
         <section class="home-section home-benefits" aria-labelledby="home-benefits-title">
             <div class="container">
                 <div class="home-section-heading home-section-heading--compact">
@@ -389,7 +513,7 @@
             </div>
         </section>
 
-        <!-- 05. Brands present in the catalogue. Text marks are used because logo artwork is not available. -->
+        <!-- 06. Brands present in the catalogue. Official artwork is stored locally; names remain visible for clarity. -->
         <section class="home-section home-brands" aria-labelledby="home-brands-title">
             <div class="container">
                 <div class="home-section-heading home-section-heading--compact">
@@ -397,97 +521,192 @@
                         <p class="home-kicker">Names in our catalogue</p>
                         <h2 id="home-brands-title">Shop by Brand</h2>
                     </div>
-                    <p>Select a brand to open its supported catalogue category.</p>
                 </div>
                 <div class="home-brand-grid">
-                    <a href="products.html#cameras"
-                        aria-label="Browse Vanta cameras"><span>V</span><strong>Vanta</strong></a>
-                    <a href="products.html#lenses" aria-label="Browse Orbis Optics lenses"><span>O</span><strong>Orbis
-                            Optics</strong></a>
-                    <a href="products.html#tripods"
-                        aria-label="Browse SteadyLine tripods"><span>S</span><strong>SteadyLine</strong></a>
-                    <a href="products.html#lighting"
-                        aria-label="Browse LumaPro lighting"><span>L</span><strong>LumaPro</strong></a>
-                    <a href="products.html#audio-video"
-                        aria-label="Browse ClearCast audio and video products"><span>C</span><strong>ClearCast</strong></a>
-                    <a href="products.html#bags"
-                        aria-label="Browse TrekSafe camera bags"><span>T</span><strong>TrekSafe</strong></a>
-                    <a href="products.html#accessories"
-                        aria-label="Browse Pteas Select accessories"><span>P</span><strong>Pteas Select</strong></a>
-                    <a href="products.html#drones"
-                        aria-label="Browse AeroView drones"><span>A</span><strong>AeroView</strong></a>
+                    <a href="products.html?brand=Aputure" aria-label="Browse Aputure products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/aputure-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Aputure</strong>
+                    </a>
+                    <a href="products.html?brand=amaran" aria-label="Browse amaran products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/amaran-logo.png" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>amaran</strong>
+                    </a>
+                    <a href="products.html?brand=Atomos" aria-label="Browse Atomos products">
+                        <span class="home-brand-grid__logo home-brand-grid__logo--compact"><img
+                                src="images/brands/atomos-logo.png" alt="" loading="lazy" decoding="async"></span>
+                        <strong>Atomos</strong>
+                    </a>
+                    <a href="products.html?brand=Canon" aria-label="Browse Canon products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/canon-logo.png" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Canon</strong>
+                    </a>
+                    <a href="products.html?brand=DJI" aria-label="Browse DJI products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/dji-logo.png" alt="" loading="lazy"
+                                decoding="async"></span>
+                        <strong>DJI</strong>
+                    </a>
+                    <a href="products.html?brand=Fujifilm" aria-label="Browse Fujifilm products">
+                        <span class="home-brand-grid__logo home-brand-grid__logo--wide"><img
+                                src="images/brands/fujifilm-logo.svg" alt="" loading="lazy" decoding="async"></span>
+                        <strong>Fujifilm</strong>
+                    </a>
+                    <a href="products.html?brand=Gitzo" aria-label="Browse Gitzo products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/gitzo-logo.png" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Gitzo</strong>
+                    </a>
+                    <a href="products.html?brand=Godox" aria-label="Browse Godox products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/godox-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Godox</strong>
+                    </a>
+                    <a href="products.html?brand=GoPro" aria-label="Browse GoPro products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/gopro-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>GoPro</strong>
+                    </a>
+                    <a href="products.html?brand=Leica" aria-label="Browse Leica products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/leica-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Leica</strong>
+                    </a>
+                    <a href="products.html?brand=Lexar" aria-label="Browse Lexar products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/lexar-logo.png" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Lexar</strong>
+                    </a>
+                    <a href="products.html?brand=Lowepro" aria-label="Browse Lowepro products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/lowepro-logo.png" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Lowepro</strong>
+                    </a>
+                    <a href="products.html?brand=Manfrotto" aria-label="Browse Manfrotto products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/manfrotto-logo.png" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Manfrotto</strong>
+                    </a>
+                    <a href="products.html?brand=Nikon" aria-label="Browse Nikon products">
+                        <span class="home-brand-grid__logo home-brand-grid__logo--wide"><img
+                                src="images/brands/nikon-logo.svg" alt="" loading="lazy" decoding="async"></span>
+                        <strong>Nikon</strong>
+                    </a>
+                    <a href="products.html?brand=Panasonic" aria-label="Browse Panasonic products">
+                        <span class="home-brand-grid__logo home-brand-grid__logo--wide"><img
+                                src="images/brands/panasonic-logo.svg" alt="" loading="lazy" decoding="async"></span>
+                        <strong>Panasonic</strong>
+                    </a>
+                    <a href="products.html?brand=Peak%20Design" aria-label="Browse Peak Design products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/peak-design-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Peak Design</strong>
+                    </a>
+                    <a href="products.html?brand=Pelican" aria-label="Browse Pelican products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/pelican-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Pelican</strong>
+                    </a>
+                    <a href="products.html?brand=R%C3%98DE" aria-label="Browse RØDE products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/rode-logo.svg" alt="" loading="lazy"
+                                decoding="async"></span>
+                        <strong>RØDE</strong>
+                    </a>
+                    <a href="products.html?brand=SanDisk" aria-label="Browse SanDisk products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/sandisk-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>SanDisk</strong>
+                    </a>
+                    <a href="products.html?brand=Sennheiser" aria-label="Browse Sennheiser products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/sennheiser-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Sennheiser</strong>
+                    </a>
+                    <a href="products.html?brand=Sigma" aria-label="Browse Sigma products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/sigma-logo.png" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Sigma</strong>
+                    </a>
+                    <a href="products.html?brand=SmallRig" aria-label="Browse SmallRig products">
+                        <span class="home-brand-grid__logo home-brand-grid__logo--dark"><img
+                                src="images/brands/smallrig-logo.svg" alt="" loading="lazy" decoding="async"></span>
+                        <strong>SmallRig</strong>
+                    </a>
+                    <a href="products.html?brand=Sony" aria-label="Browse Sony products">
+                        <span class="home-brand-grid__logo home-brand-grid__logo--wide"><img
+                                src="images/brands/sony-logo.svg" alt="" loading="lazy" decoding="async"></span>
+                        <strong>Sony</strong>
+                    </a>
+                    <a href="products.html?brand=Tamron" aria-label="Browse Tamron products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/tamron-logo.svg" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Tamron</strong>
+                    </a>
+                    <a href="products.html?brand=Think%20Tank" aria-label="Browse Think Tank products">
+                        <span class="home-brand-grid__logo"><img src="images/brands/think-tank-logo.png" alt=""
+                                loading="lazy" decoding="async"></span>
+                        <strong>Think Tank</strong>
+                    </a>
+                    <a href="products.html?brand=Zoom" aria-label="Browse Zoom products">
+                        <span class="home-brand-grid__logo home-brand-grid__logo--wide"><img
+                                src="images/brands/zoom-logo.svg" alt="" loading="lazy" decoding="async"></span>
+                        <strong>Zoom</strong>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- 06. Services and support verified on services.html -->
-        <section class="home-section home-services" aria-labelledby="home-services-title">
+        <!-- Customer feedback -->
+        <section class="home-review-section" aria-labelledby="home-review-title">
             <div class="container">
-                <div class="home-section-heading">
-                    <div>
-                        <p class="home-kicker home-kicker--light">Beyond the product shelf</p>
-                        <h2 id="home-services-title">Services &amp; Support</h2>
-                    </div>
-                    <p>Bring your question, setup or equipment to the store. Service availability and estimates are
-                        confirmed after inspection.</p>
+                <header class="home-review-section__headline">
+                    <p class="home-kicker">CUSTOMER FEEDBACK</p>
+                    <h2 id="home-review-title">What <span>customers share</span> with us.</h2>
+                </header>
+                <div class="home-review-section__grid">
+                    <article class="home-review-card">
+                        <p class="home-review-card__quote">Your perspective can help another creator feel more prepared
+                            when comparing their next camera, lens or complete kit.</p>
+                        <footer>
+                            <span class="home-review-card__number" aria-hidden="true">01</span>
+                            <div>
+                                <strong>Share your experience</strong>
+                                <small>Customer feedback</small>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="home-review-card">
+                        <p class="home-review-card__quote">Tell us what you compared, what was useful in store and what
+                            you are looking forward to creating next.</p>
+                        <footer>
+                            <span class="home-review-card__number" aria-hidden="true">02</span>
+                            <div>
+                                <strong>Help shape this space</strong>
+                                <small>Verified reviews only</small>
+                            </div>
+                        </footer>
+                    </article>
                 </div>
-
-                <div class="home-service-layout">
-                    <figure class="home-service-image">
-                        <img src="images/services/service-care-workbench.jpg" width="1448" height="1086"
-                            alt="Camera, lens and maintenance tools on a professional service workbench" loading="lazy"
-                            decoding="async">
-                        <figcaption>Practical help for choosing, setting up and caring for gear.</figcaption>
-                    </figure>
-
-                    <div class="home-service-grid">
-                        <article>
-                            <span>01</span>
-                            <div>
-                                <h3>Gear Consultation</h3>
-                                <p>Talk through photography, filmmaking or creator goals and narrow down suitable
-                                    options.</p>
-                                <a href="services.html#consultation">Explore consultation <b
-                                        aria-hidden="true">&rarr;</b></a>
-                            </div>
-                        </article>
-                        <article>
-                            <span>02</span>
-                            <div>
-                                <h3>Setup &amp; Compatibility</h3>
-                                <p>Build a kit whose camera, lens, audio, power, media and support gear work together.
-                                </p>
-                                <a href="services.html#setup">Explore setup support <b aria-hidden="true">&rarr;</b></a>
-                            </div>
-                        </article>
-                        <article>
-                            <span>03</span>
-                            <div>
-                                <h3>Cleaning &amp; Maintenance</h3>
-                                <p>Start with an inspection for sensor, lens, autofocus, firmware and function support.
-                                </p>
-                                <a href="services.html#cleaning">Explore maintenance <b
-                                        aria-hidden="true">&rarr;</b></a>
-                            </div>
-                        </article>
-                        <article>
-                            <span>04</span>
-                            <div>
-                                <h3>Repair Support</h3>
-                                <p>Get an initial assessment before service availability, scope and estimates are
-                                    confirmed.</p>
-                                <a href="services.html#repair">Explore repair support <b
-                                        aria-hidden="true">&rarr;</b></a>
-                            </div>
-                        </article>
-                    </div>
+                <div class="home-review-section__action">
+                    <p>We publish customer reviews only after the customer confirms the wording and gives permission.</p>
+                    <a class="home-text-link" href="contact.html#contact-form">Leave a review <span
+                            aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
         </section>
-
-        <!-- Customer Reviews is intentionally omitted: no genuine review source exists in the project. -->
 
     </main>
+
+    <!-- Shared call to action -->
+    <section class="site-action" aria-labelledby="site-action-title">
+        <div class="site-action__inner">
+            <h2 class="site-action__title" id="site-action-title">Ready to find the right gear?</h2>
+            <p class="site-action__copy">Tell us what you want to photograph or create. We will help you compare
+                suitable options before you visit.</p>
+            <a class="site-action__button" href="contact.html">Get in touch</a>
+        </div>
+    </section>
 
     <!-- Existing site footer links and verified contact details are retained. -->
     <footer class="site-footer" id="site-footer">
@@ -601,6 +820,7 @@
         </div>
     </footer>
 
+    <script src="js/product-data.js" defer></script>
     <script src="js/product-menu.js" defer></script>
     <script src="js/home-product-search.js" defer></script>
 </body>
